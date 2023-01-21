@@ -97,19 +97,19 @@
 
 % COLOR THEMES SELECTION
 % For Light theme un-comment this and comment the Dark theme section below
-% \colorlet{textcolor}{black}
-% \colorlet{urlcolor}{blue}
-% \newcommand{\otherThemeRef}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Dark.pdf}{\color{textcolor}{Dark} \color{urlcolor}{\faicon{lightbulb-o}}}}}
-% \newcommand{\latestVersion}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Dark.pdf}{\color{urlcolor}{\faicon{refresh}} \color{textcolor} {Latest} }}}
+\colorlet{textcolor}{black}
+\colorlet{urlcolor}{blue}
+\newcommand{\otherThemeRef}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Dark.pdf}{\color{textcolor}{Dark} \color{urlcolor}{\faicon{lightbulb-o}}}}}
+\newcommand{\latestVersion}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Dark.pdf}{\color{urlcolor}{\faicon{refresh}} \color{textcolor} {Latest} }}}
 
 % For Dark theme un-comment this and comment the Light theme section above
 % For Dark theme un-comment this and comment the Light theme section above
-\colorlet{textcolor}{white!80!gray}
-\colorlet{backgroundcolor}{black!30!gray}
-\colorlet{urlcolor}{blue!25!white}
-\AtBeginDocument{\color{textcolor}}
-\newcommand{\otherThemeRef}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Light.pdf}{\color{urlcolor}{\faicon{lightbulb-o}} \color{textcolor}{Light} }}}
-\newcommand{\latestVersion}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Dark.pdf}{\color{urlcolor}{\faicon{refresh}} \color{textcolor} {Latest} }}}
+% \colorlet{textcolor}{white!80!gray}
+% \colorlet{backgroundcolor}{black!30!gray}
+% \colorlet{urlcolor}{blue!25!white}
+% \AtBeginDocument{\color{textcolor}}
+% \newcommand{\otherThemeRef}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Light.pdf}{\color{urlcolor}{\faicon{lightbulb-o}} \color{textcolor}{Light} }}}
+% \newcommand{\latestVersion}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Dark.pdf}{\color{urlcolor}{\faicon{refresh}} \color{textcolor} {Latest} }}}
 
 % ---
 
@@ -117,7 +117,7 @@
 \begin{document}
 
 % For Dark theme also un-comment this line:
-\pagecolor{backgroundcolor}
+% \pagecolor{backgroundcolor}
 
 % % HEADING
 % \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
@@ -199,11 +199,11 @@
       {Southwest Airlines}{Dallas, TX (Remote)}
       {Software Engineer \textit{(Data Platforms)} | \textit{Internship}}{Jan. 2022 - April 2022}
       \resumeItemListStart
-          \resumeItem{Developed a Scala Framework to properly parse X12 EDI Documents.}
-          \resumeItem{Orchestrated and automated Scala ELT Pipeline, using Baker, to ingest 5k X12 EDI Invoices Daily into an On-Prem Postgres Data Warehouse.}
+          \resumeItem{Developed a Python Framework to properly parse X12 EDI Documents.}
+          \resumeItem{Orchestrated and automated Python ELT Pipeline, using Airflow, to ingest 5k X12 EDI Invoices Daily into an On-Prem Postgres Data Warehouse.}
           \resumeItem{Deployed and monitored pipeline using Docker, Jenkins, \& TravisCI.}
       \resumeItemListEnd
-      \resumeTech{Technologies}{Scala, Baker, Postgres, Docker, Git, Jenkins.}\\
+      \resumeTech{Technologies}{Python, Airflow, Postgres, Docker, Git, Jenkins.}\\
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -247,11 +247,11 @@
       {Scout Energy Partners}{Dallas, TX (Hybrid)}
       {Software Engineer \textit{(Data Platforms)}}{Jun. 2019 - Aug. 2020}
      \resumeItemListStart
-         \resumeItem{Developed Scala ETL pipelines to retrieve more than 400k+ data points daily from Field SCADA Systems.}
+         \resumeItem{Developed Python ETL pipelines to retrieve more than 400k+ data points daily from Field SCADA Systems.}
          \resumeItem{Led Development of a C\# Blazor Data Platform to visualize and maintain data governance.}
          \resumeItem{Developed and Deployed multiple Python \& Scala Scripts \& Applications, Orchestrated with Luigi \& Baker.}
      \resumeItemListEnd
-     \resumeTech{Technologies}{C\#, Python, Scala, Azure, Git, Github Actions, SQL Server, LaTeX}
+     \resumeTech{Technologies}{C\#, Python, Azure, Git, Github Actions, SQL Server, LaTeX}
 \resumeSubHeadingListEnd
 % ---
 
@@ -275,14 +275,14 @@
     %%%%%%%%%%%%%%%%%%%%%%%%%%
     %     UNT Masters    %
     %%%%%%%%%%%%%%%%%%%%%%%%%%
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {University of North Texas}{Denton, TX}
-      {M.S in Data Engineering}{Dec. 2022 -- Dec. 2024 \textit{(Anticipated)}}
-      \resumeItemListStart
-          \resumeItem{GPA: 4.0/4.0.}
-      \resumeItemListEnd
-      \resumeTech{Notable Courses}{\textit{Graph Theory, Empirical Analysis}}
+  % \resumeSubHeadingListStart
+  %   \resumeSubheading
+  %     {University of North Texas}{Denton, TX}
+  %     {M.S in Data Engineering}{Dec. 2022 -- Dec. 2024 \textit{(Anticipated)}}
+  %     \resumeItemListStart
+  %         \resumeItem{GPA: 4.0/4.0.}
+  %     \resumeItemListEnd
+  %     \resumeTech{Notable Courses}{\textit{Graph Theory, Empirical Analysis}}
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%
     %     UNTD Bachelors    %
