@@ -1,7 +1,7 @@
 %-------------------------
 % Resume in Latex
-% Author : Wilmer Gonzalez
-% Based on: Sourabh Bajaj repo
+% Author : Adam Gaddis
+% Based on: Wilmer Gonzalez
 % License : MIT
 %------------------------
 
@@ -46,292 +46,296 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+\vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 % ---
 
 % Custom commands
 \newcommand{\resumeItem}[1]{%2
-  \item\small{
-    %\textbf{#1}
-    #1
-    %{: #2 \vspace{-2pt}}
-  }
+\item\small{
+%\textbf{#1}
+#1
+%{: #2 \vspace{-2pt}}
+}
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{8pt}\item%-1
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+\vspace{8pt}\item%-1
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+  \textbf{#1} & #2 \\
+  \textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-5pt}
 }
 \newcommand{\resumeSubSubheading}[2]{
-    \vspace{1pt}
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-5pt}
+\vspace{1pt}
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+  \textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-5pt}
 }
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 \renewcommand{\labelitemii}{$\circ$}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+  \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+  \newcommand{\resumeItemListStart}{\begin{itemize}}
+    \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-\newcommand{\resumeTech}[2]{
- \underline{#1:} #2
-}
-
-\newcommand{\name}[1]{\begin{center}\textsc{\Huge#1}\\\end{center}}
-\newcommand{\program}[1]{\begin{center}\textsc{#1}\end{center}}
-\newcommand{\contact}[1]{\begin{center}\color{contactgray}{\small#1}\end{center}}
-
-
-\newenvironment{resume_header}{}{\vspace{0pt}}
-
-
-\newenvironment{nospacetabbing}{
-    \begin{tabbing}
-}{\end{tabbing}\vspace{-1.2em}}
-
-% COLOR THEMES SELECTION
-% For Light theme un-comment this and comment the Dark theme section below
-\colorlet{textcolor}{black}
-\colorlet{urlcolor}{blue}
-\newcommand{\otherThemeRef}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Dark.pdf}{\color{textcolor}{Dark} \color{urlcolor}{\faicon{lightbulb-o}}}}}
-\newcommand{\latestVersion}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Dark.pdf}{\color{urlcolor}{\faicon{refresh}} \color{textcolor} {Latest} }}}
-
-% For Dark theme un-comment this and comment the Light theme section above
-% For Dark theme un-comment this and comment the Light theme section above
-% \colorlet{textcolor}{white!80!gray}
-% \colorlet{backgroundcolor}{black!30!gray}
-% \colorlet{urlcolor}{blue!25!white}
-% \AtBeginDocument{\color{textcolor}}
-% \newcommand{\otherThemeRef}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Light.pdf}{\color{urlcolor}{\faicon{lightbulb-o}} \color{textcolor}{Light} }}}
-% \newcommand{\latestVersion}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Dark.pdf}{\color{urlcolor}{\faicon{refresh}} \color{textcolor} {Latest} }}}
-
-% ---
-
-% DOCUMENT MAIN
-\begin{document}
-
-% For Dark theme also un-comment this line:
-% \pagecolor{backgroundcolor}
-
-% % HEADING
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{https://linktr.ee/wilmerags}{\Large Wilmer A. Gonzalez S.}} &  \href{https://github.com/wilmeragsgh}{ \faicon{github} \color{urlcolor} wilmeragsgh} \\
-%   \href{mailto:wilmeragsgm@gmail.com}{wilmeragsgm@gmail.com} &  \faicon{code} Python, R\\
-%   \textsl{\small \latestVersion} & \textsl{\small \otherThemeRef}
-% \end{tabular*}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     HEADER    %
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-    \textsl{\small \latestVersion} & \textsl{\small \otherThemeRef}
-\end{tabular*}
-
-\begin{resume_header}
-    \name{\text{\href{https://www.linkedin.com/in/adam-t-gaddis-/}{\color{urlcolor}{\faicon{linkedin}} \color{textcolor} Adam T.Gaddis }}}
-    \program{ Data Engineer | Software Engineer }
-    \contact
-    {
-        \text{\href{mailto:agaddis02@live.com}{\color{urlcolor}{\faicon{envelope}} \color{textcolor} agaddis02@live.com}}
-        \hspace{2cm}
-        \text{\href{https://github.com/agaddis02}{\color{urlcolor}{\faicon{github}} \color{textcolor}  agaddis02}}
-        \hspace{2cm}
-        \text{\color{urlcolor}{\faicon{phone}} \color{textcolor}{(214) 335 - 3200}}
-        \hspace{2cm}
-        \text{\color{urlcolor}{\faicon{code}} \color{textcolor}{Python, Scala, C\#}}
+    \newcommand{\resumeTech}[2]{
+    \underline{#1:} #2
     }
-\end{resume_header}
+
+    \newcommand{\name}[1]{\begin{center}\textsc{\Huge#1}\\\end{center}}
+    \newcommand{\program}[1]{\begin{center}\textsc{#1}\end{center}}
+    \newcommand{\contact}[1]{\begin{center}\color{contactgray}{\small#1}\end{center}}
+
+
+    \newenvironment{resume_header}{}{\vspace{0pt}}
+
+
+    \newenvironment{nospacetabbing}{
+    \begin{tabbing}
+      }{\end{tabbing}\vspace{-1.2em}}
+
+      % COLOR THEMES SELECTION
+      % For Light theme un-comment this and comment the Dark theme section below
+      \colorlet{textcolor}{black}
+      \colorlet{urlcolor}{blue}
+      \newcommand{\otherThemeRef}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Dark.pdf}{\color{textcolor}{Dark} \color{urlcolor}{\faicon{lightbulb-o}}}}}
+      \newcommand{\latestVersion}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Dark.pdf}{\color{urlcolor}{\faicon{refresh}} \color{textcolor} {Latest} }}}
+
+      % For Dark theme un-comment this and comment the Light theme section above
+      % For Dark theme un-comment this and comment the Light theme section above
+      % \colorlet{textcolor}{white!80!gray}
+      % \colorlet{backgroundcolor}{black!30!gray}
+      % \colorlet{urlcolor}{blue!25!white}
+      % \AtBeginDocument{\color{textcolor}}
+      % \newcommand{\otherThemeRef}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Light.pdf}{\color{urlcolor}{\faicon{lightbulb-o}} \color{textcolor}{Light} }}}
+      % \newcommand{\latestVersion}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Dark.pdf}{\color{urlcolor}{\faicon{refresh}} \color{textcolor} {Latest} }}}
+
+      % ---
+
+      % DOCUMENT MAIN
+      \begin{document}
+
+      % For Dark theme also un-comment this line:
+      % \pagecolor{backgroundcolor}
+
+      % % HEADING
+      % \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+        %   \textbf{\href{https://linktr.ee/wilmerags}{\Large Wilmer A. Gonzalez S.}} &  \href{https://github.com/wilmeragsgh}{ \faicon{github} \color{urlcolor} wilmeragsgh} \\
+        %   \href{mailto:wilmeragsgm@gmail.com}{wilmeragsgm@gmail.com} &  \faicon{code} Python, R\\
+        %   \textsl{\small \latestVersion} & \textsl{\small \otherThemeRef}
+        % \end{tabular*}
+
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
+        %     HEADER    %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
+        \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+          \textsl{\small \latestVersion} & \textsl{\small \otherThemeRef}
+        \end{tabular*}
+
+        \begin{resume_header}
+          \name{\text{\href{https://www.linkedin.com/in/adam-t-gaddis-/}{\color{urlcolor}{\faicon{linkedin}} \color{textcolor} Adam T.Gaddis }}}
+          \program{ Software Engineer }
+          \contact
+          {
+          \text{\href{mailto:agaddis02@live.com}{\color{urlcolor}{\faicon{envelope}} \color{textcolor} agaddis02@live.com}}
+          \hspace{2cm}
+          \text{\href{https://github.com/agaddis02}{\color{urlcolor}{\faicon{github}} \color{textcolor}  agaddis02}}
+          \hspace{2cm}
+          \text{\color{urlcolor}{\faicon{phone}} \color{textcolor}{(214) 335 - 3200}}
+          \hspace{2cm}
+          \text{\color{urlcolor}{\faicon{code}} \color{textcolor}{Python, Go, Scala}}
+          }
+        \end{resume_header}
 
 
 
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Experience    %
-%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
+        %     Experience    %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Bank of America    %
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Bank of America}{Dallas, TX (Hybrid)}
-      {AVP Data Engineer II | \textit{Permanent}}{Sep. 2022 - Present}
-      \resumeItemListStart
-      \resumeItem{Designed, Developed, and Deployed an End to End Python Flask Data Platform used for tracking the MetaData and Linneage of 900+ reports totaling 1mil+ Data Points.}
-      \resumeItem{Restructured chaotic job scheduling system into a robust, centralized system written in  Python | Luigi based orchestration.}
-      \resumeItem{Brought in to transform an archaic SQL only ETL process into a Hadoop based ELT process utilizing PySpark, Kafka, and the rest of the Apache Suite, processing over 20k Data Points per hour.}
-      \resumeItem{Developed CI/CD Pipelines, Jenkins, and Led design of new Git Repo Architecture}
-\resumeItemListEnd
-\resumeTech{Technologies}{Python, SQL, Azure, Jenkins, Git, Hadoop, MapReduce, HDFS, Sqoop, Impala, CosmosDB}
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
+        %     Bank of America    %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
+        \section{Experience}
+        \resumeSubHeadingListStart
+        \resumeSubheading
+        {Bank of America}{Dallas, TX (Hybrid)}
+        {AVP Data Engineer II | \textit{Permanent}}{Sep. 2022 - Present}
+        \resumeItemListStart
+        \resumeItem{Designed, Developed, and Deployed a Python Flask Internal CRUD Application used for tracking the MetaData and Linneage of 900+ reports totaling 50,000,000+ Data Points.}
+        \resumeItem{Restructured chaotic job scheduling system, creating a centralized system written in Python leveraging the Luigi framework.}
+        \resumeItem{Brought in to transform an archaic SQL/SSIS only ETL process into a Spark, Hadoop, Kafka based ELT process, developing natively using Scala, processing over 20,000 Data Points per hour.}
+        \resumeItem{Developed CI/CD Pipelines, Jenkins, and Led design of new Git Repo Architecture}
+        \resumeItemListEnd
+        \resumeTech{Technologies}{Python, Scala, Azure, Jenkins, Git, Hadoop, MapReduce, HDFS, Sqoop, Impala, CosmosDB}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     LOOP    %
-%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
+        %     LOOP    %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\resumeSubheading
-      {LOOP}{Dallas, TX (Remote)}
-      {Senior Data Engineer | \textit{Contract}}{April 2022 - Sep. 2022}
-      \resumeItemListStart
-          \resumeItem{Hosted Airflow instance on Docker Container, via GCP, as central scheduler for routine jobs focused around Python, BigQuery, and GCS.}
-          \resumeItem{Designed data pipelines in GCP DataFlow and Fivetran for the ingestion of data from multiple 3rd party vendors.}
-          \resumeItem{Meticulously documented technical systems w/ Data catalogs, DBDocs \& DBDiagram.}
-          \resumeItem{Integrated a 3rd party C\# application into quote flow to dynamically insure our honest quote comparison between other providers; runs on more than 7.5k quotes a month.}
-      \resumeItemListEnd
-      \resumeTech{Technologies}{Python, C\#, Docker, GCP (Cloud Storage, Data Catalog, BigQuery), Airflow, ERD, API's.}\\
+        \resumeSubheading
+        {LOOP}{Dallas, TX (Remote)}
+        {Senior Data Engineer | \textit{Contract}}{April 2022 - Sep. 2022}
+        \resumeItemListStart
+        \resumeItem{Hosted Airflow instance on Docker Container, via GCP, as central scheduler for routine jobs focused around Python, BigQuery, and GCS.}
+        \resumeItem{Developed multiple data pipelines using Python \& GCP DataFlow for the ingestion and transformation from internal \& external data sources.}
+        \resumeItem{Meticulously documented technical systems w/ Data catalogs, DBDocs \& DBDiagram.}
+        \resumeItem{Integrated a 3rd party C\# application into quote flow to dynamically insure our honest quote comparison between other providers; runs on more than 7,500 quotes a month.}
+        \resumeItemListEnd
+        \resumeTech{Technologies}{Python, C\#, Docker, GCP (Cloud Storage, Data Catalog, BigQuery), Airflow, ERD, API's.}\\
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Southwest Airlines    %
-%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
+        %     Southwest Airlines    %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\resumeSubheading
-      {Southwest Airlines}{Dallas, TX (Remote)}
-      {Software Engineer \textit{(Data Platforms)} | \textit{Internship}}{Jan. 2022 - April 2022}
-      \resumeItemListStart
-          \resumeItem{Developed a Python Framework to properly parse X12 EDI Documents.}
-          \resumeItem{Orchestrated and automated Python ELT Pipeline, using Airflow, to ingest 5k X12 EDI Invoices Daily into an On-Prem Postgres Data Warehouse.}
-          \resumeItem{Deployed and monitored pipeline using Docker, Jenkins, \& TravisCI.}
-      \resumeItemListEnd
-      \resumeTech{Technologies}{Python, Airflow, Postgres, Docker, Git, Jenkins.}\\
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     UNTD Work    %
-%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \resumeSubheading
+        {Southwest Airlines}{Dallas, TX (Remote)}
+        {Software Engineer \textit{(Data Platforms)} | \textit{Internship}}{Jan. 2022 - April 2022}
+        \resumeItemListStart
+        \resumeItem{Developed a Python Framework to properly parse X12 EDI Documents.}
+        \resumeItem{Orchestrated and automated Python ELT Pipeline, using Airflow, to ingest 5,000 X12 EDI Invoices Daily into an On-Prem Postgres Data Warehouse.}
+        \resumeItem{Deployed and monitored pipeline using Docker, Jenkins, \& TravisCI.}
+        \resumeItemListEnd
+        \resumeTech{Technologies}{Python, Airflow, Postgres, Docker, Git, Jenkins.}\\
 
 
-\resumeSubheading
-      {University of North Texas at Dallas}{Dallas, TX (Remote)}
-      {Lead Analytics Engineer | \textit{Permanent}}{Aug. 2020 - December. 2021}
-      \resumeItemListStart
-          \resumeItem{Oversaw a team of 5 engineers focused on Data Governance, Reporting, and Quality for the University.}
-          \resumeItem{Rewrote existing SAS pipelines in Scala, decreased time for State report generation by 35\%.}
-      \resumeItemListEnd
-      \resumeTech{Technologies}{Scala, SAS, SQL Server, Postgres, Azure, Git, API's.}
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
+        %     UNTD Work    %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Goldman Sachs    %
-%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \resumeSubheading
+        {University of North Texas at Dallas}{Dallas, TX (Remote)}
+        {Lead Analytics Engineer | \textit{Permanent}}{Aug. 2020 - December. 2021}
+        \resumeItemListStart
+        \resumeItem{Oversaw a team of 5 engineers focused on Data Governance, Reporting, and Quality for the University.}
+        \resumeItem{Rewrote existing  scattered SAS pipelines into an all inclusive Scala system, decreasing time for State report generation by 100\%.}
+        \resumeItemListEnd
+        \resumeTech{Technologies}{Scala, SAS, SQL Server, Postgres, Azure, Git, API's.}
 
 
-\resumeSubheading
-      {Goldman Sachs}{Dallas, TX (In Person)}
-      {Software Engineer \textit{(Data Platforms)} | \textit{Internship}}{Jun. 2021 - Aug. 2021}
-      \resumeItemListStart
-      \resumeItem{Developed Python Application to compare data lineage between application and cloud schema's, reconciled 100\% of mismatches.}
-      \resumeItem{Rewrote Enterprise Data Platform test cases to utilize pytest, testing coverage increased from ~70\% to 91\%+.}
-      \resumeItem{Developed and Deployed a key Python Library (PAT) streamlining workflows with instant connections to 5 central data stores.}
-      \resumeItemListEnd
-      \resumeTech{Technologies}{Python, JIRA, Confluence, API's, Git, Docker, Kubernetes, Tableau. PyPi.}\\
-
-\newpage
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Scout Energy Partners    %
-%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
+        %     Goldman Sachs    %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\resumeSubheading
-      {Scout Energy Partners}{Dallas, TX (Hybrid)}
-      {Software Engineer \textit{(Data Platforms)}}{Jun. 2019 - Aug. 2020}
-     \resumeItemListStart
-         \resumeItem{Developed Python ETL pipelines to retrieve more than 400k+ data points daily from Field SCADA Systems.}
-         \resumeItem{Led Development of a C\# Blazor Data Platform to visualize and maintain data governance.}
-         \resumeItem{Developed and Deployed multiple Python \& Scala Scripts \& Applications, Orchestrated with Luigi \& Baker.}
-     \resumeItemListEnd
-     \resumeTech{Technologies}{C\#, Python, Azure, Git, Github Actions, SQL Server, LaTeX}
-\resumeSubHeadingListEnd
-% ---
+        \resumeSubheading
+        {Goldman Sachs}{Dallas, TX (In Person)}
+        {Software Engineer \textit{(Data Platforms)} | \textit{Internship}}{Jun. 2021 - Aug. 2021}
+        \resumeItemListStart
+        \resumeItem{Developed Python Application to compare database schemas between on-premise systems and their cloud equivalents, reconciled 100\% of mismatches.}
+        \resumeItem{Rewrote Enterprise Data Platform test cases to utilize pytest, testing coverage increased from ~70\% to 91\%+.}
+        \resumeItem{Developed and Deployed a key Python Library (PAT) streamlining workflows with instant connections to 5 central interna data stores.}
+        \resumeItemListEnd
+        \resumeTech{Technologies}{Python, JIRA, Confluence, API's, Git, Docker, Kubernetes, Tableau, PyPi.}\\
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Skills    %
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Skills}
-    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-        \resumeTech{Orchestration}{Airflow, Luigi, Prefect, Azure Data Factory} & \resumeTech{ Databases}{Postgres, CassandraDB, MongoDB}\\
-        \resumeTech{Python Frameworks}{Flask, PySpark, pandas/numpy} & \resumeTech{Scala Frameworks}{Spark, Kafka, Baker}\\
-        \resumeTech{C\# Frameworks}{Synapse, ADO.NET, Blazor} & \resumeTech{Cloud Platforms}{GCP, AWS, Azure}\\
-        \resumeTech{Containerization}{Docker, Kubernetes} & \resumeTech{Interest}{FinTech, ClimateTech}
-    \end{tabular*}
+        \newpage
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
+        %     Scout Energy Partners    %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Education    %
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Education}
+        \resumeSubheading
+        {Scout Energy Partners}{Dallas, TX (Hybrid)}
+        {Software Engineer \textit{(Data Platforms)}}{Jun. 2019 - Aug. 2020}
+        \resumeItemListStart
+        \resumeItem{Developed Python ETL pipelines to retrieve more than 400k+ data points daily from in-field SCADA Systems.}
+        \resumeItem{Led Development of an internal Data Platform to visualize and maintain data governance, built using Go \& Python.}
+        \resumeItem{Developed and Deployed multiple Python \& Go internal CRUD Applications and scripts.}
+        \resumeItemListEnd
+        \resumeTech{Technologies}{Go, Python, Azure, Git, Github Actions, SQL Server, LaTeX}
+        \resumeSubHeadingListEnd
+        % ---
 
-    %%%%%%%%%%%%%%%%%%%%%%%%%%
-    %     UNT Masters    %
-    %%%%%%%%%%%%%%%%%%%%%%%%%%
-  % \resumeSubHeadingListStart
-  %   \resumeSubheading
-  %     {University of North Texas}{Denton, TX}
-  %     {M.S in Data Engineering}{Dec. 2022 -- Dec. 2024 \textit{(Anticipated)}}
-  %     \resumeItemListStart
-  %         \resumeItem{GPA: 4.0/4.0.}
-  %     \resumeItemListEnd
-  %     \resumeTech{Notable Courses}{\textit{Graph Theory, Empirical Analysis}}
-
-    %%%%%%%%%%%%%%%%%%%%%%%%%%
-    %     UNTD Bachelors    %
-    %%%%%%%%%%%%%%%%%%%%%%%%%%
-    \resumeSubheading
-      {University of North Texas at Dallas}{Dallas, TX}
-      {B.B.A in Analytics}{Aug. 2020 -- Dec. 2022 \textit{(Graduated)}}
-      \resumeItemListStart
-          \resumeItem{GPA: 3.7/4.0.}
-          \resumeItem{Early graduation of 2 years.}
-      \resumeItemListEnd
-      \resumeTech{Notable Courses}{\textit{Statistical Modeling, Database Applications, Data Warehousing, Big Data Management.}}
-
-    %%%%%%%%%%%%%%%%%%%%%%%%%%
-    %     Richland  Associates    %
-    %%%%%%%%%%%%%%%%%%%%%%%%%%
-      \resumeSubheading
-      {Dallas Community College | \textit{(Richland)}}{Dallas, TX}
-      {A.A.S in Software Development}{Aug. 2016 -- May. 2020 \textit{(Graduated)}}
-      \resumeItemListStart
-          \resumeItem{GPA: 3.6/4.0.}
-          \resumeItem{Local Dallas County Community College District partnered with Emmett J. Conrad’s Global Collegiate Academy. Awards students with 60 college
-credit hours, and an Associate’s Degree in Applied Science.}
-      \resumeItemListEnd
-      \resumeTech{Notable Courses}{\textit{Operating Systems, C\# Development, System Design, Java, Python, Networking.}}
-  \resumeSubHeadingListEnd
-% ---
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
+        %     Skills    %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
+        \section{Skills}
+        \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+          \resumeTech{Orchestration}{Airflow, Luigi, Cloud-Based(ADF, DataFlow)} & \resumeTech{Databases}{Postgres, CassandraDB, MongoDB}\\
+          \resumeTech{Python Frameworks}{Flask, PySpark, FastAPI} & \resumeTech{Scala Frameworks}{Spark, Kafka, Akka}\\
+          \resumeTech{Go Frameworks}{Echo, Gin, Mux} & \resumeTech{Cloud Platforms}{GCP, AWS, Azure}\\
+          \resumeTech{Containerization}{Docker, Kubernetes} & \resumeTech{Interest}{FinTech, ClimateTech}
+        \end{tabular*}
 
 
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
+        %     Education    %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
+        \section{Education}
 
-\hfill
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
+        %     UNT Masters    %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
+        % \resumeSubHeadingListStart
+        %   \resumeSubheading
+        %     {University of North Texas}{Denton, TX}
+        %     {M.S in Data Engineering}{Dec. 2022 -- Dec. 2024 \textit{(Anticipated)}}
+        %     \resumeItemListStart
+        %         \resumeItem{GPA: 4.0/4.0.}
+        %     \resumeItemListEnd
+        %     \resumeTech{Notable Courses}{\textit{Graph Theory, Empirical Analysis}}
 
-\hfill \textsl{Following sections items are clickable, unfortunately majority of our Robotics Team code is Private.}
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
+        %     UNTD Bachelors    %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
+        \resumeSubheading
+        {University of North Texas at Dallas}{Dallas, TX}
+        {B.B.A in Analytics}{Aug. 2020 -- Dec. 2022 \textit{(Graduated)}}
+        \resumeItemListStart
+        \resumeItem{GPA: 3.7/4.0.}
+        \resumeItem{Early graduation of 2 years.}
+        \resumeItemListEnd
+        \resumeTech{Notable Courses}{\textit{Statistical Modeling, Database Applications, Data Warehousing, Big Data Management.}}
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
+        %     Richland  Associates    %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
+        \resumeSubheading
+        {Dallas Community College | \textit{(Richland)}}{Dallas, TX}
+        {A.A.S in Software Development}{Aug. 2016 -- May. 2020 \textit{(Graduated)}}
+        \resumeItemListStart
+        \resumeItem{GPA: 3.6/4.0.}
+        \resumeItem{Local Dallas County Community College District partnered with Emmett J. Conrad’s Global Collegiate Academy. Awards students with 60 college
+        credit hours, and an Associate’s Degree in Applied Science.}
+        \resumeItemListEnd
+        \resumeTech{Notable Courses}{\textit{Operating Systems, C\# Development, System Design, Java, Python, Networking.}}
+        \resumeSubHeadingListEnd
+        % ---
 
 
-% PROJECTS
-\section{Projects}
 
-  \resumeSubHeadingListStart
-    \resumeSubItem{\href{https://github.com/FRC3005}{LightningScout ETL: Using Python, Azure (Postgres), to automate the ingestion of 60k Robot Scouting Actions Annually}}
+        \hfill
 
-    \resumeSubItem{\href{https://github.com/FRC3005}{Event Slack Bot: Using AWS Lambda Functions + TBA API v3 to retrieve and relay real-time event information to our teams chat.}}
+        \hfill \textsl{Following sections items are clickable, unfortunately majority of our Robotics Team code is Private.}
 
-    \resumeSubItem{\href{https://robochargers.io/}{Scouting System Mentor FRC3005: I teach kids how to program crazy systems \& application through Robotics in Python, Scala, and Java that professionals are learning.}}
 
-  \resumeSubHeadingListEnd
+        % PROJECTS
+        \section{Projects}
 
-\section{Summary}
-    \text{Going on 4 years of proven Software Development experience specializing in Data Engineering and Data Platforms. I have spearheaded multiple projects in various industries including, Oil \& Gas, Financial Services, Insurtech, and so forth. My technical expertise coupled with my natural people skills gives me the tools to effectively cut through road-blockers and deliver high quality products.}
+        \resumeSubHeadingListStart
+        \resumeSubItem{{Oil & Gas Contract: Developed a ELT process for an oil & gas client, to interact with ComboCurve API v2, and ingest all data available, built using Python FastAPI, SQL Server, Mage.ai}}
 
-\end{document}
+        \resumeSubItem{\href{https://github.com/FRC3005}{LightningScout Web App: Developed Scala Back-end to interface with a flutter based application that is used our data collection system.}}
+
+        \resumeSubItem{\href{https://github.com/FRC3005}{LightningScout ELT: Using Python, Azure (Postgres), to automate the ingestion of 100k Robot Scouting Actions Annually.}}
+
+        \resumeSubItem{\href{https://github.com/FRC3005}{Slack Bot Scheduler: Python based, event driven slack bot, interacting with S3's, TBA API v3, and internal scripts.}}
+
+        \resumeSubItem{\href{https://robochargers.io/}{Scouting System Mentor FRC3005: I teach kids how to program crazy systems \& application through Robotics in Python, Scala, and Go that professionals are just now learning.}}
+
+        \resumeSubHeadingListEnd
+
+        \section{Summary}
+        \text{Going on 4 years of proven Software Engineering experience specializing in Back-end, Data Platforms, CRUD, & Big Data Engineering. I have spearheaded multiple projects in various industries including, Oil \& Gas, Financial Services, Insurtech, and so forth. My technical expertise coupled with my natural people skills gives me the tools to effectively cut through road-blockers and deliver high quality products.}
+
+        \end{document}
 
