@@ -136,7 +136,7 @@
 
 \begin{resume_header}
     \name{\text{\href{https://www.linkedin.com/in/adam-t-gaddis-/}{\color{urlcolor}{\faicon{linkedin}} \color{textcolor} Adam T.Gaddis }}}
-    \program{ Software Engineer }
+    \program{ Big Data Systems \& Software}
     \contact
     {
         \text{\href{mailto:agaddis02@live.com}{\color{urlcolor}{\faicon{envelope}} \color{textcolor} agaddis02@live.com}}
@@ -165,7 +165,7 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Arch Energy Partners}{Dallas, TX (Hybrid)}
-      {Lead Data Platform Engineer}{March. 2023 - Present}
+      {Lead Data Engineer/Scientist}{March. 2023 - Present}
       \resumeItemListStart
       % \resumeItem{As the Lead Data Engineer at a dynamic oil and gas company, I spearhead the development and management of all software and data infrastructure, working autonomously to deliver scalable and efficient software \& data solutions.}
       \resumeItem{Developed robust data ingestion pipelines using Go, facilitating efficient data acquisition from various APIs. Develop Python and Scala code on Databricks, leveraging Apache Spark for processing extensive well production data, (500 Million+ Daily).}
@@ -186,7 +186,7 @@
       \resumeItemListStart
       \resumeItem{Led the establishment of SDLC practices for the team, transitioning code to a centralized Bitbucket repository and meticulously documenting all ongoing systems.}
       \resumeItem{Overhauled real-time text-based data segments of the data warehouse, converting SQL Server scripts and SSIS packages into efficient PySpark code and Kafka streams, achieving processing of hundreds of thousands of data points in near real-time.}
-      \resumeItem{Successfully prototyped a Flask-based web application to revamp a report tracking system for a sister team, managing and updating over 1000 internal reports encompassing more than 500,000 data points.}
+      \resumeItem{Successfully developed a Flask-based web application to revamp a report tracking system for a sister team, managing and updating over 1000 internal reports encompassing more than 500,000 data points.}
       \resumeItem{Spearheaded the continuous integration and continuous deployment (CI/CD) processes using Bitbucket and Jenkins, ensuring seamless and efficient deployment of software updates.}
 \resumeItemListEnd
 \resumeTech{Technologies}{Python, Azure, Jenkins, Git, Hadoop, MapReduce, HDFS, Sqoop, Impala, CosmosDB}
@@ -201,11 +201,10 @@
       {Senior Data Engineer}{April 2022 - Sep. 2022}
       \resumeItemListStart
         % \resumeItem{As a Senior Data Engineer at Loop, I led key data engineering initiatives, focusing on building and managing sophisticated data pipelines and integrating advanced data processing solutions.}
-        \resumeItem{Orchestrated the hosting of an Airflow instance within a Docker container on Google Cloud Platform (GCP), establishing it as the central scheduler for routine jobs. This initiative streamlined processes involving Python, BigQuery, and Google Cloud Storage (GCS).}
-        \resumeItem{Diligently documented technical systems, employing tools like Data catalogs, DBDocs, and DBDiagram, thereby improving system transparency and maintainability.}
-        \resumeItem{Successfully integrated a third-party C# application into the quote flow system, enabling dynamic insurance quote comparisons with other providers. This system handles over 7,500 quotes monthly, demonstrating its scalability and reliability.}
+        \resumeItem{◦ Orchestrated the deployment of an Airflow instance within a Docker container on GCP, serving as the central scheduler for complex data processing and management jobs.}
+        \resumeItem{Collaboratively developed an internal model with a 3rd Party Data Provider for Version 2 of our original quoting model. This resulted in a 75\% increase in the "Sign on first Quote" metric, indicating enhanced customer engagement. The model was deployed through Vertex AI.}
       \resumeItemListEnd
-      \resumeTech{Technologies}{Python, C\#, Docker, GCP (Cloud Storage, Data Catalog, BigQuery), Airflow, ERD, API's.}\\
+      \resumeTech{Technologies}{Python, C\#, Docker, GCP (Cloud Storage, Vertex AI, BigQuery), Airflow, ERD, API's.}\\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Southwest Airlines    %
@@ -261,11 +260,12 @@
       {Scout Energy Partners}{Dallas, TX (Hybrid)}
       {Data Scientist}{Jun. 2019 - Aug. 2020}
      \resumeItemListStart
-         \resumeItem{Developed Python ETL pipelines to retrieve more than 400k+ data points daily from in-field SCADA Systems.}
-         \resumeItem{Led Development of an internal Data Platform to visualize and maintain data governance, built using Go \& Python.}
-         \resumeItem{Developed and Deployed multiple Python internal CRUD Applications, scripts, and predictive models.}
+         \resumeItem{Developed Python ETL pipelines to retrieve more than 10 million+ data points daily from in-field SCADA Systems.}
+         \resumeItem{Built predictive analytical models forecasting net production returns from various fracking strategies, aiding in strategic decision-making.}
+         \resumeItem{Constructed and deployed a Python machine learning model on Databricks ML platform for analyzing incoming deals on long-term PDP wells, utilizing geospatial data and reverse time-series analysis.}
+         \resumeItem{Published an internal whitepaper on the model, leading to significant operational tweaks. Collaborated closely with Production Engineers and Geologists to refine the model and enhance its applicability.}
      \resumeItemListEnd
-     \resumeTech{Technologies}{Python, Azure, Git, Github Actions, SQL Server, LaTeX}
+     \resumeTech{Technologies}{Python, Azure, Databricks, Github Actions, SQL Server, Geopandas, Fiona, Shapely, Scikit-learn}
 \resumeSubHeadingListEnd
 % ---
 
@@ -276,8 +276,8 @@
     \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
         \resumeTech{Orchestration}{Airflow, Luigi, Cloud-Based(ADF, DataFlow)} & \resumeTech{Databases}{Postgres, CassandraDB, MongoDB}\\
         \resumeTech{Python Frameworks}{Flask, PySpark, FastAPI} & \resumeTech{Scala Frameworks}{Spark, Hadoop, Hive}\\
-        \resumeTech{Go Frameworks}{Echo, Gin, Mux} & \resumeTech{Cloud Platforms}{GCP, AWS, Azure}\\
-        \resumeTech{Containerization}{Docker, Kubernetes} & \resumeTech{Interest}{FinTech, ClimateTech}
+        \resumeTech{Datawarehouse}{Bigquery, Databricks, Azure Synapse} & \resumeTech{Cloud Platforms}{GCP, AWS, Azure}\\
+        \resumeTech{Analytics}{Arcgis, All Major BI Tools, } & \resumeTech{ML \& AI}{PyTorch, Keras, OpenCV, Apache Spark MLlib}
     \end{tabular*}
 
 
@@ -348,3 +348,4 @@
 
     \end{document}
 
+    
