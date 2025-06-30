@@ -6,7 +6,6 @@
 %------------------------
 
 \documentclass[11pt, a4paper]{article}
-
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -87,7 +86,12 @@
 \newcommand{\program}[1]{\begin{center}\textsc{#1}\end{center}}
 \newcommand{\contact}[1]{\begin{center}\color{contactgray}{\small#1}\end{center}}
 
-
+\newcommand{\resumeCondensedItem}[5]{%
+  \item \small{%
+    \textbf{#1} $|$ \textit{#2} $|$ \textit{#3} $|$ \textit{#4} \\
+    \hspace*{1.5em} #5
+  }
+}
 \newenvironment{resume_header}{}{\vspace{0pt}}
 
 
@@ -97,19 +101,19 @@
 
 % COLOR THEMES SELECTION
 % For Light theme un-comment this and comment the Dark theme section below
-% \colorlet{textcolor}{black}
-% \colorlet{urlcolor}{blue}
-% \newcommand{\otherThemeRef}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Dark.pdf}{\color{textcolor}{Dark} \color{urlcolor}{\faicon{lightbulb-o}}}}}
-% \newcommand{\latestVersion}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Dark.pdf}{\color{urlcolor}{\faicon{refresh}} \color{textcolor} {Latest} }}}
+\colorlet{textcolor}{black}
+\colorlet{urlcolor}{blue}
+\newcommand{\otherThemeRef}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Dark.pdf}{\color{textcolor}{Dark} \color{urlcolor}{\faicon{lightbulb-o}}}}}
+\newcommand{\latestVersion}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Dark.pdf}{\color{urlcolor}{\faicon{refresh}} \color{textcolor} {Latest} }}}
 
 % For Dark theme un-comment this and comment the Light theme section above
 % For Dark theme un-comment this and comment the Light theme section above
-\colorlet{textcolor}{white!80!gray}
-\colorlet{backgroundcolor}{black!30!gray}
-\colorlet{urlcolor}{blue!25!white}
-\AtBeginDocument{\color{textcolor}}
-\newcommand{\otherThemeRef}{\text{\href{}{\color{urlcolor}{\faicon{lightbulb-o}} \color{textcolor}{Light} }}}
-\newcommand{\latestVersion}{\text{\href{}{\color{urlcolor}{\faicon{refresh}} \color{textcolor} {Latest} }}}
+% \colorlet{textcolor}{white!80!gray}
+% \colorlet{backgroundcolor}{black!30!gray}
+% \colorlet{urlcolor}{blue!25!white}
+% \AtBeginDocument{\color{textcolor}}
+% \newcommand{\otherThemeRef}{\text{\href{}{\color{urlcolor}{\faicon{lightbulb-o}} \color{textcolor}{Light} }}}
+% \newcommand{\latestVersion}{\text{\href{}{\color{urlcolor}{\faicon{refresh}} \color{textcolor} {Latest} }}}
 
 % ---
 
@@ -117,14 +121,7 @@
 \begin{document}
 
 % For Dark theme also un-comment this line:
-\pagecolor{backgroundcolor}
-
-% % HEADING
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{https://linktr.ee/wilmerags}{\Large Wilmer A. Gonzalez S.}} &  \href{https://github.com/wilmeragsgh}{ \faicon{github} \color{urlcolor} wilmeragsgh} \\
-%   \href{mailto:wilmeragsgm@gmail.com}{wilmeragsgm@gmail.com} &  \faicon{code} Python, R\\
-%   \textsl{\small \latestVersion} & \textsl{\small \otherThemeRef}
-% \end{tabular*}
+% \pagecolor{backgroundcolor}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -136,18 +133,26 @@
 
 \begin{resume_header}
     \name{\text{\href{https://www.linkedin.com/in/adam-t-gaddis-/}{\color{urlcolor}{\faicon{linkedin}} \color{textcolor} Adam T.Gaddis }}}
-    \program{ Big Data Platforms \& Engineering | Up-and-Coming Data Leader}
+    \program{ IT \& Data Infrastructure Leader | Governance, Enablement, Impact}
     \contact
     {
-        \text{\href{mailto:agaddis02@live.com}{\color{urlcolor}{\faicon{envelope}} \color{textcolor} agaddis02@live.com}}
-        \hspace{2cm}
+        \text{\href{mailto:ag.lsec@icloud.com}{\color{urlcolor}{\faicon{envelope}} \color{textcolor} ag.lsec@icloud.com}}
+        \hspace{1cm}
         \text{\href{https://github.com/agaddis02}{\color{urlcolor}{\faicon{github}} \color{textcolor}  agaddis02}}
-        \hspace{2cm}
+        \hspace{1cm}
         \text{\color{urlcolor}{\faicon{phone}} \color{textcolor}{(214) 335 - 3200}}
-        \hspace{2cm}
-        \text{\color{urlcolor}{\faicon{code}} \color{textcolor}{Python, Go, Scala}}
+        \hspace{1cm}
+        \text{\color{urlcolor}{\faicon{code}} \color{textcolor}{Python, C\#, Go, Rust, Swift}}
     }
 \end{resume_header}
+
+\section{Executive Summary}
+\text{
+  Data-Focused IT Leader with 6+ years of experience designing scalable data platforms, building cloud-native infrastructure, and driving enterprise-wide data governance. I bring full-stack fluency across the data life-cycle, from analytics to engineering to architecture, paired with hands-on IT experience in SCADA, VPNs, and on-prem environments. Positioned for IT management or lead IC roles in data engineering, platforms, or infrastructure, I excel at bridging technical execution with strategic enablement. I specialize in building not only resilient systems but also the governance frameworks, documentation, and data standards that ensure long-term organizational value. Beyond my professional work, I mentor high school students in robotics (FRC), leading software education and managing a \$80K+ annual nonprofit budget. I bring the same operational discipline and mission-driven leadership to community work as I do to enterprise-scale data problems, making me equally prepared for technical leadership and advisory roles.
+} \\
+\vspace{6pt}
+\textit{Board & Advisory: Proven operational leadership in nonprofit STEM education with budgetary control, executive stakeholder engagement, and governance alignment. Experienced in building infrastructure, compliance systems, and educational pipelines, well-positioned for board and advisory contributions in tech-forward organizations.}
+
 
 
 
@@ -159,30 +164,58 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
-%    Arch Energy Partners    %
+%    Cloudflare    %
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Experience}
-  \resumeSubHeadingListStart
-      \resumeSubheading
-      {Cloudflare}{Dallas, TX (Remote)}
-      {Senior Data Engineer}{May 2024 - Present}
-      \resumeItemListStart
-      \resumeItem{Mid Level Data Engineer, Working with BI team on Internal Facing Data Applications and Large Scale Data Ingestion Pipelines.}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Cloudflare}{Dallas, TX (Remote)}
+    {Data Engineer}{May 2024 – Present}
+    \resumeItemListStart
+      \resumeItem{Mid-level Data Engineer working on the BI team to support internal-facing data applications and large-scale ingestion pipelines.}
+      \resumeItem{Created, owned, and currently maintain the platform operations for the Interim Variable Billing project—a direct revenue-generating initiative recouping \$40M in quarterly revenue.}
+      \resumeItem{Implemented a Retrieval-Augmented Generation (RAG) AI model for Cloudflare’s internal chatbot on the Lighthouse platform. Built a data pipeline to load hundreds of internal wikis into Cloudflare Vectorize and integrated with Cloudflare Workers to enable seamless AI-assisted internal search.}
+      \resumeItem{Designed and implemented native data quality checks within our Go-based ingestion framework using DuckDB, enabling efficient in-line validation during ingestion.}
+      \resumeItem{Delivered multiple internal presentations across both the Lighthouse sub-team and the 80+ member BI organization, covering topics such as RAG implementation, ClickHouse vs. Postgres, and ingestion architecture.}
+      \resumeItem{Proposed a cost-saving redesign to eliminate reliance on Spark/Dataproc by migrating transformations to Rust-based DataFusion and/or DBT, significantly reducing compute cost.}
+      \resumeItem{Developed and maintained multiple data pipelines using Cloudflare’s internal Go-based ingestion framework.}
+      \resumeItem{Recognized as the U.S. timezone lead for the Lighthouse platform due to consistent ownership and leadership in debugging and delivery.}
+      \resumeItem{Developed reusable ingestion pipelines to support syncing across a variety of structured and semi-structured data sources.}
     \resumeItemListEnd
-    \resumeTech{Technologies}{Go, GCP, Bigquery, Clickhouse, Docker, Kubernetes}
-    
+    \resumeTech{Technologies}{Typescript, Scala, GCP, Bigquery, Clickhouse, Docker, Kubernetes, Cloudflare Products: (Workers AI, Workers, Vectorize, R2) }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    Adam Gaddis Consulting    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%
     \resumeSubheading
-      {Arch Energy Partners}{Dallas, TX (Hybrid)}
-      {Founding Data Engineer - Head of Data }{March. 2023 - Present}
+      {Adam Gaddis IT \& Data Consulting}{Dallas, TX}
+      {Founder}{April 2022 – Present}
       \resumeItemListStart
-      % \resumeItem{As the Lead Data Engineer at a dynamic oil and gas company, I spearhead the development and management of all software and data infrastructure, working autonomously to deliver scalable and efficient software \& data solutions.}
-      \resumeItem{Converted to Consultant May 2024.}
-      \resumeItem{Developed robust data ingestion pipelines using Go, facilitating efficient data acquisition from various APIs. Develop Python and Scala code on Databricks, leveraging Apache Spark for processing extensive well production data, (500 Million+ Daily).}
-      \resumeItem{Created a bespoke tool for tracking and monitoring active oil wells, integrating real-time data and analytics capabilities. Developed an ELT pipeline in Python to streamline accounting data integration into the data warehouse.}
-      \resumeItem{Expertly set up and maintained a multi-cloud environment across GCP, AWS, and Azure, optimizing for cost-effectiveness and performance. Pioneered the use of BigQuery for centralized data warehousing, enhancing data accessibility and analytics.}
-      \resumeItem{Engineered multiple Google Cloud Functions to automate and refine data transformation and storage jobs, enhancing system efficiency and reliability.}
+        \resumeItem{Provide IT and data consulting services to a variety of clients, with a focus on the oil and gas industry.}
+        \resumeItem{Helped multiple clients design and implement modern data infrastructure, automating ingestion and storage from key energy data providers such as Enverus, IHS, and ComboCurve.}
+      \resumeItemListEnd
+    \resumeTech{Technologies}{Snowflake, Azure, GCP, Combocurve, PowerBI, Spotfire, Databricks, DBT, SSO, IOT, SCADA, SQL Server, Tailscale, Spark}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    Arch Energy Partners    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resumeSubheading
+  {Arch Energy Partners}{Dallas, TX (Hybrid)}
+  {Head of Data \& IT}{Mar. 2023 – Present}
+  \resumeItemListStart
+    \resumeItem{As the founding Data / IT Hire at a dynamic oil and gas company, led the design and management of all software and data infrastructure, working autonomously to deliver scalable, efficient solutions.}
+    \resumeItem{Managed day-to-day IT operations: provisioned virtual machines, maintained the office VPN system, and enforced cloud spend budgets.}
+    \resumeItem{Developed robust data ingestion pipelines using Go, C\#, and Python to integrate data from multiple sources. Leveraged PySpark on Databricks to process over 500 million daily well production records.}
+    \resumeItem{Built custom tools to track and monitor active oil wells with real-time analytics. Developed a Python-based ELT pipeline to streamline accounting data integration into the data warehouse.}
+    \resumeItem{Established and maintained a multi-cloud environment across GCP, AWS, and Azure, optimizing for cost and performance. Pioneered centralized warehousing using BigQuery.}
+    \resumeItem{Eliminated reliance on third-party IT vendors and consultants by internalizing all infrastructure operations.}
+    \resumeItem{Implemented a robust PySpark-based replication system for ingesting well data from Enverus \& other RDS based providers.}
+    \resumeItem{Designed the "Wells in Pay" Spotfire dashboard for Land and Accounting teams, providing immediate insight into well status (e.g., pay, active, pending) and recovering missed payments.}
+    \resumeItem{Centralized all transformation logic using Google Dataform to enforce consistency and transparency.}
+    \resumeItem{Engineered multiple Google Cloud Functions to automate and enhance data transformation and storage processes.}
+    \resumeItem{Converted to consultant in May 2024.}
 \resumeItemListEnd
-\resumeTech{Technologies}{Go, Scala, Python, GCP, Bigquery, S3, GCS, Cloud Functions, Streamlit, Databricks, Apache Spark, MongoDB }
+\resumeTech{Technologies}{Go, GCP, Bigquery, S3, GCS, Cloud Functions, Databricks, Apache Spark, SSO \& Oauth, Spotfire, Geopandas, DBT/Dataform}
 
 
 
@@ -191,14 +224,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \resumeSubheading
       {Bank of America}{Dallas, TX (Hybrid)}
-      {AVP Data Engineer 2}{Sep. 2022 - Mar. 2023}
+      {AVP Data Engineer II}{Sep. 2022 — Mar. 2023}
       \resumeItemListStart
       \resumeItem{Led the establishment of SDLC practices for the team, transitioning code to a centralized Bitbucket repository and meticulously documenting all ongoing systems.}
-      \resumeItem{Overhauled real-time text-based data segments of the data warehouse, converting SQL Server scripts and SSIS packages into efficient PySpark code and Kafka streams, achieving processing of hundreds of thousands of data points in near real-time.}
+      \resumeItem{Overhauled real-time text-based data segments of the data warehouse, converting SQL Server scripts and SSIS packages into efficient PySpark code and Kafka streams, achieving processing of hundreds of millions of data points in near real-time.}
+      \resumeItem{Led modernization effort in transition to modern data tools, identified transition plan from SQL Server to Azure Synapse.}
       \resumeItem{Successfully developed a Flask-based web application to revamp a report tracking system for a sister team, managing and updating over 1000 internal reports encompassing more than 500,000 data points.}
       \resumeItem{Spearheaded the continuous integration and continuous deployment (CI/CD) processes using Bitbucket and Jenkins, ensuring seamless and efficient deployment of software updates.}
 \resumeItemListEnd
-\resumeTech{Technologies}{Python, Azure, Jenkins, Git, Hadoop, MapReduce, HDFS, Sqoop, Impala, CosmosDB}
+\resumeTech{Technologies}{Azure, Hadoop, MapReduce, HDFS, Sqoop, Impala, Azure Synapse}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -207,87 +241,83 @@
 
 \resumeSubheading
       {LOOP}{Dallas, TX (Remote)}
-      {Senior Data Engineer}{April 2022 - Sep. 2022}
+      {Senior Data Engineer}{April 2022 — Sep. 2022}
       \resumeItemListStart
-        % \resumeItem{As a Senior Data Engineer at Loop, I led key data engineering initiatives, focusing on building and managing sophisticated data pipelines and integrating advanced data processing solutions.}
-        \resumeItem{◦ Orchestrated the deployment of an Airflow instance within a Docker container on GCP, serving as the central scheduler for complex data processing and management jobs.}
-        \resumeItem{Collaboratively developed an internal model with a 3rd Party Data Provider for Version 2 of our original quoting model. This resulted in a 75\% increase in the "Sign on first Quote" metric, indicating enhanced customer engagement. The model was deployed through Vertex AI.}
+        \resumeItem{Led key data engineering initiatives, focusing on building and managing robust data pipelines, remediating data governance issues, and centralizing data for company-wide analysis.}
+        \resumeItem{Implemented and configured GCP-hosted Airflow (Cloud Composer), centralizing all pipeline scheduling into a unified orchestration system to improve data lineage and dependency management.}
+        \resumeItem{Collaborated with a third-party data provider to develop Version 2 of our internal quoting model, deployed via Vertex AI \& developed in C\#, resulting in a 75\% increase in the “Sign on First Quote” conversion rate.}
+        \resumeItem{Resolved data discrepancies across vendors, from the policy administration system to the location tracking provider, by producing a fully approved, centralized data dictionary to enforce clarity and governance.}
+        \resumeItem{Developed integration workflows to sync BigQuery data with Zendesk, fully automating the process of updating customer and lead records across sales and support platforms.}
       \resumeItemListEnd
-      \resumeTech{Technologies}{Python, C\#, Docker, GCP (Cloud Storage, Vertex AI, BigQuery), Airflow, ERD, API's.}\\
+      \resumeTech{Technologies}{Docker, GCP (Cloud Storage, Vertex AI, BigQuery, Cloud Composer), ERD, Data Governance}\\
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Southwest Airlines    %
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\resumeSubheading
-      {Southwest Airlines}{Dallas, TX (Remote)}
-      {Data Platform Engineer Intern}{Jan. 2022 - April 2022}
-      \resumeItemListStart
-          \resumeItem{Developed a POC Python Framework to properly parse X12 EDI Documents.}
-          \resumeItem{Orchestrated and automated Python ELT Pipeline, using Airflow, to ingest X12 EDI Invoices Daily into an On-Prem Postgres Data Warehouse.}
-          \resumeItem{Deployed and monitored pipeline using Docker and Jenkins.}
-      \resumeItemListEnd
-      \resumeTech{Technologies}{Python, Airflow, Postgres, Docker, Git, Jenkins.}\\
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Goldman Sachs    %
-%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \resumeSubheading
-      {Goldman Sachs}{Dallas, TX (In Person)}
-      {Data Platform Engineer Intern}{Jun. 2021 - Aug. 2021}
-      \resumeItemListStart
-      \resumeItem{Developed Python Application to compare database schema's between on-premise systems and their cloud equivalents, reconciled 100\% of mismatches.}
-      \resumeItem{Rewrote Enterprise Data Platform test cases to utilize pytest, testing coverage increased from ~70\% to 91\%+.}
-      \resumeItem{Developed and Deployed a key Python Library (PAT) streamlining workflows with instant connections to 5 central internal data stores.}
-      \resumeItemListEnd
-      \resumeTech{Technologies}{Python, JIRA, Confluence, API's, Git, Docker, Kubernetes, Tableau, PyPi.}\\
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     UNTD Work    %
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\resumeSubheading
-      {University of North Texas at Dallas}{Dallas, TX (Remote)}
-      {Lead Analytics Engineer}{Aug. 2020 - December. 2021}
-      \resumeItemListStart
-          \resumeItem{Oversaw a team of 5 engineers focused on Data Governance, Reporting, and Quality for the University, Rewrote existing scattered SAS pipelines into an all inclusive Scala system, decreasing time for State report generation by 250\%.}
-      \resumeItemListEnd
-      \resumeTech{Technologies}{Scala, SAS, SQL Server, Oracle, Azure, Git, API's.}
-
-
-% \newpage
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Scout Energy Partners    %
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\resumeSubheading
-      {Scout Energy Partners}{Dallas, TX (Hybrid)}
-      {Data Platform Engineer}{Jun. 2019 - Aug. 2020}
+      {Previous Experience Cont.}{Pre: April 2022}
+      {All roles predating 2022, condensed, see \href{https://www.linkedin.com/in/adam-t-gaddis-/}{\textbf{LinkedIn}} for full information on each of these roles}{Jun. 2019 – Apr. 2022}
      \resumeItemListStart
-         \resumeItem{Developed Python ETL pipelines to retrieve more than 10 million+ data points daily from in-field SCADA Systems.}
-         \resumeItem{Built predictive analytical models forecasting net production returns from various fracking strategies, aiding in strategic decision-making.}
-         \resumeItem{Constructed and deployed a Python machine learning model on Databricks ML platform for analyzing incoming deals on long-term PDP wells, utilizing geospatial data and reverse time-series analysis.}
-         \resumeItem{Published an internal whitepaper on the model, leading to significant operational tweaks. Collaborated closely with Production Engineers and Geologists to refine the model and enhance its applicability.}
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
+        %     Southwest Airlines    %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
+        \resumeCondensedItem
+          {Southwest Airlines}
+          {Data Platform Engineer Intern}
+          {Jan. 2022 — April 2022}
+          {Dallas, TX}
+          {Automated X12 EDI invoice ingestion using a custom Python parser, Airflow, and Postgres; supported ERP transformation planning and deployed pipelines via Docker and Jenkins.}
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
+        %     Goldman Sachs    %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
+        \resumeCondensedItem
+          {Goldman Sachs}
+          {Data Platform Engineer Intern}
+          {Jun. 2021 — Aug. 2021}
+          {Dallas, TX}
+          {Built internal Python tools and libraries to streamline audit data workflows, improved test coverage from 70\% to 91\%, and reconciled on-prem vs. cloud schema mismatches for critical data systems.}
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
+        %     UNT Dallas    %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
+        \resumeCondensedItem
+          {University of North Texas at Dallas}
+          {Lead Analytics Engineer}
+          {Aug. 2020 — Dec. 2021}
+          {Dallas, TX}
+          {Led analytics and reporting efforts across Power BI, SAS, and Oracle; managed data requests, state reporting pipelines, and a team of five while ensuring full compliance with Texas education standards.}
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
+        %     Scout Energy Partners    %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%
+        \resumeCondensedItem
+          {Scout Energy Partners}
+          {Data Platform Engineer}
+          {Jun. 2019 — Aug. 2020}
+          {Dallas, TX}
+          {Built and maintained SCADA data infrastructure, C\# web apps, predictive models, and Spotfire dashboards for oil production analytics while supporting hybrid IT operations and Azure SQL Server development.}
      \resumeItemListEnd
-     \resumeTech{Technologies}{Python, Azure, Databricks, Github Actions, SQL Server, Geopandas, Fiona, Shapely, Scikit-learn}
+     \resumeTech{Technologies}{Python, PyPI, Docker, Kubernetes, Azure, SQL Server, Oracle, Postgres, PowerBI, Tableau, Spotfire, Geopandas, Fiona, Shapely, Confluence, Jenkins}
+
 \resumeSubHeadingListEnd
+
+
 % ---
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Skills    %
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Skills}
-    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-        \resumeTech{Orchestration}{Airflow, Luigi, Cloud-Based(ADF, DataFlow)} & \resumeTech{Databases}{Postgres, CassandraDB, MongoDB}\\
-        \resumeTech{Python Frameworks}{Flask, PySpark, FastAPI} & \resumeTech{Scala Frameworks}{Spark, Hadoop, Hive}\\
-        \resumeTech{Datawarehouse}{Bigquery, Databricks, Azure Synapse} & \resumeTech{Cloud Platforms}{GCP, AWS, Azure}\\
-        \resumeTech{Analytics}{Arcgis, All Major BI Tools, } & \resumeTech{ML \& AI}{PyTorch, Keras, OpenCV, Apache Spark MLlib}
-    \end{tabular*}
+
+% Side-by-side section for compact categories
+\begin{tabularx}{\textwidth}{X X}
+    \resumeTech{Orchestration}{Airflow, Prefect, Azure Data Factory} &
+    \resumeTech{Frameworks}{FastAPI, Spark, DuckDB, DataFusion, Blazor, Iceberg, DBT} \\
+\end{tabularx}
+
+% Full-width rows for larger categories
+\resumeTech{Analytics \& ML}{PowerBI, Spotfire, Workers AI, Vectorize, Keras, OpenCV} \\
+\resumeTech{Governance \& Compliance}{Monte Carlo, Great Expectations, dbdiagram.io} \\
+\resumeTech{IT \& Infrastructure}{SCADA, Cisco AnyConnect, Tailscale, Okta (SSO), Windows/Linux Server, On-Prem Systems} \\
+\resumeTech{Data Storage}{BigQuery, Snowflake, Databricks, Azure Synapse, SQL Server, Postgres, S3, MongoDB} \\
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -296,72 +326,51 @@
 \section{Education}
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%
-    %     UNT Masters    %
+    %     UNTD MBA    %
     %%%%%%%%%%%%%%%%%%%%%%%%%%
-  % \resumeSubHeadingListStart
-  %   \resumeSubheading
-  %     {University of North Texas}{Denton, TX}
-  %     {M.S in Data Engineering}{Dec. 2022 -- Dec. 2024 \textit{(Anticipated)}}
-  %     \resumeItemListStart
-  %         \resumeItem{GPA: 4.0/4.0.}
-  %     \resumeItemListEnd
-  %     \resumeTech{Notable Courses}{\textit{Graph Theory, Empirical Analysis}}
 
 
     \resumeSubheading
       {University of North Texas at Dallas}{Dallas, TX}
-      {M.B.A Strategic Management Concentration | \textit{GPA: 4.0/4.0} } {Aug. 2024 -- July. 2025  \textit{((Anticipated))}}
-      \resumeItemListStart
-      \resumeItemListEnd
-      \resumeTech{Notable Courses}{\textit{Statistical Modeling, Database Applications, Data Warehousing, Big Data Management.}}
+      {M.B.A Strategic Management Concentration | \textit{GPA: 4.0/4.0} } {Aug. 2024 — July. 2025}
       
     %%%%%%%%%%%%%%%%%%%%%%%%%%
     %     UNTD Bachelors    %
     %%%%%%%%%%%%%%%%%%%%%%%%%%
     \resumeSubheading
       {University of North Texas at Dallas}{Dallas, TX}
-      {B.B.A in Analytics | \textit{GPA: 3.7/4.0} } {Aug. 2020 -- Dec. 2022 \textit{(Graduated)}}
-      \resumeItemListStart
-      \resumeItemListEnd
-      \resumeTech{Notable Courses}{\textit{Statistical Modeling, Database Applications, Data Warehousing, Big Data Management.}}
+      {B.B.A in Analytics | \textit{GPA: 3.7/4.0} } {Aug. 2020 — Dec. 2022}
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%
     %     Richland  Associates    %
     %%%%%%%%%%%%%%%%%%%%%%%%%%
       \resumeSubheading
-      {Dallas Community College | \textit{(Richland)}}{Dallas, TX}
-      {A.A.S in Software Development | \textit{GPA: 3.6/4.0.}}{Aug. 2016 -- May. 2020 \textit{(Graduated)}}
-      \resumeItemListStart
-      \resumeItemListEnd
-      \resumeTech{Notable Courses}{\textit{Operating Systems, C\# Development, System Design, Java, Python, Networking.}}
+      {Dallas College}{Dallas, TX}
+      {A.A.S in Software Development | \textit{GPA: 3.6/4.0.}}{Aug. 2016 — May. 2020}
+
   \resumeSubHeadingListEnd
 % ---
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Leadership & Community Engagement    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Leadership \& Community Engagement}
 
-% \hfill
+    \resumeSubheading
+      {FIRST Robotics Competition Team 3005}{Dallas, TX}
+      {Co-executive Director \& Lead Software Mentor}{2020 — Present}
+      \resumeItemListStart
+        \resumeItem{Lead mentor and administrator for FRC Team 3005 and FTC teams at Emmett J. Conrad High School in Dallas ISD, serving students in the Vickery Meadows area—a designated refugee community with highly diverse and underserved demographics.}
+        \resumeItem{Contributed 1000+ hours annually mentoring students and managing team operations, including software education, IT infrastructure, and team logistics.}
+        \resumeItem{Oversaw cloud infrastructure and IT systems, leveraging nonprofit credits and mentoring students in the development of scouting, data collection, and analytics apps used during competition.}
+        \resumeItem{Assumed full leadership of the program in 2025 alongside my wife, taking responsibility for administration, budgeting, grant writing, and maintaining relationships with school leadership and key sponsors such as the Vickery Meadows Youth Foundation.}
+        \resumeItem{Manage an annual nonprofit budget of \$60,000–\$80,000 to fund robotics competitions, equipment, travel, and outreach, ensuring long-term sustainability and community impact.}
+        \resumeItem{Lead all software and IT initiatives, including robot programming, while fostering student-driven development in a hands-on, collaborative learning environment.}
+        \resumeItem{Mentor approximately 30 students annually and support competitive excellence, including back-to-back Texas UIL State Championship titles.}
+    \resumeItemListEnd
 
-% \hfill \textsl{Following sections items are clickable, unfortunately majority of our Robotics Team code is Private.}
 
 
-% PROJECTS
-\section{Projects}
-
-  \resumeSubHeadingListStart
-    \resumeSubItem{{Oil \& Gas Contract: Developed a ELT process for an oil \& gas client, to interact with Combocurve API v2, and ingest all data available, built using Pyspark \& SQL Server}}
-
-    \resumeSubItem{\href{https://github.com/FRC3005}{LightningScout Web App: Developed Scala Back-end to interface with a flutter based application that is used our data collection system.}}
-
-    \resumeSubItem{\href{https://github.com/FRC3005}{LightningScout ELT: Using Python, Azure (Postgres), to automate the ingestion of 100k Robot Scouting Actions Annually.}}
-
-    \resumeSubItem{\href{https://github.com/FRC3005}{Slack Bot Scheduler: Python based, event driven slack bot, interacting with S3's, TBA API v3, and internal scripts.}}
-
-    \resumeSubItem{\href{https://robochargers.io/}{Scouting System Mentor FRC3005: I teach kids how to program crazy systems \& application through Robotics in Python, Scala, and Go that professionals are just now learning.}}
-
-    \resumeSubHeadingListEnd
-
-    % \section{Summary}
-    %     \text{Going on 4 years of proven Software Engineering experience specializing in Back-end, Data Platforms, CRUD, & Big Data Engineering. I have spearheaded multiple projects in various industries including, Oil \& Gas, Financial Services, Insurtech, and so forth. My technical expertise coupled with my natural people skills gives me the tools to effectively cut through road-blockers and deliver high quality products.}
-
-    \end{document}
+\end{document}
 
