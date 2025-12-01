@@ -101,19 +101,19 @@
 
 % COLOR THEMES SELECTION
 % For Light theme un-comment this and comment the Dark theme section below
-\colorlet{textcolor}{black}
-\colorlet{urlcolor}{blue}
-\newcommand{\otherThemeRef}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Dark.pdf}{\color{textcolor}{Dark} \color{urlcolor}{\faicon{lightbulb-o}}}}}
-\newcommand{\latestVersion}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Dark.pdf}{\color{urlcolor}{\faicon{refresh}} \color{textcolor} {Latest} }}}
+% \colorlet{textcolor}{black}
+% \colorlet{urlcolor}{blue}
+% \newcommand{\otherThemeRef}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Dark.pdf}{\color{textcolor}{Dark} \color{urlcolor}{\faicon{lightbulb-o}}}}}
+% \newcommand{\latestVersion}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Dark.pdf}{\color{urlcolor}{\faicon{refresh}} \color{textcolor} {Latest} }}}
 
 % For Dark theme un-comment this and comment the Light theme section above
 % For Dark theme un-comment this and comment the Light theme section above
-% \colorlet{textcolor}{white!80!gray}
-% \colorlet{backgroundcolor}{black!30!gray}
-% \colorlet{urlcolor}{blue!25!white}
-% \AtBeginDocument{\color{textcolor}}
-% \newcommand{\otherThemeRef}{\text{\href{}{\color{urlcolor}{\faicon{lightbulb-o}} \color{textcolor}{Light} }}}
-% \newcommand{\latestVersion}{\text{\href{}{\color{urlcolor}{\faicon{refresh}} \color{textcolor} {Latest} }}}
+\colorlet{textcolor}{white!80!gray}
+\colorlet{backgroundcolor}{black!30!gray}
+\colorlet{urlcolor}{blue!25!white}
+\AtBeginDocument{\color{textcolor}}
+\newcommand{\otherThemeRef}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Light.pdf}{\color{urlcolor}{\faicon{lightbulb-o}} \color{textcolor}{Light} }}}
+\newcommand{\latestVersion}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Dark.pdf}{\color{urlcolor}{\faicon{refresh}} \color{textcolor} {Latest} }}}
 
 % ---
 
@@ -121,7 +121,7 @@
 \begin{document}
 
 % For Dark theme also un-comment this line:
-% \pagecolor{backgroundcolor}
+\pagecolor{backgroundcolor}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -142,16 +142,15 @@
         \hspace{1cm}
         \text{\color{urlcolor}{\faicon{phone}} \color{textcolor}{(214) 335 - 3200}}
         \hspace{1cm}
-        \text{\color{urlcolor}{\faicon{code}} \color{textcolor}{Python, C\#, Go, Rust, Swift}}
+        \text{\color{urlcolor}{\faicon{code}} \color{textcolor}{Python, C\#, Go, Rust}}
     }
 \end{resume_header}
 
 \section{Executive Summary}
 \text{
-  Data-Focused IT Leader with 6+ years of experience designing scalable data platforms, building cloud-native infrastructure, and driving enterprise-wide data governance. I bring full-stack fluency across the data life-cycle, from analytics to engineering to architecture, paired with hands-on IT experience in SCADA, VPNs, and on-prem environments. Positioned for IT management or lead IC roles in data engineering, platforms, or infrastructure, I excel at bridging technical execution with strategic enablement. I specialize in building not only resilient systems but also the governance frameworks, documentation, and data standards that ensure long-term organizational value. Beyond my professional work, I mentor high school students in robotics (FRC), leading software education and managing a \$80K+ annual nonprofit budget. I bring the same operational discipline and mission-driven leadership to community work as I do to enterprise-scale data problems, making me equally prepared for technical leadership and advisory roles.
+  Data-Focused IT Leader with 7+ years of experience designing scalable data platforms, building cloud-native infrastructure, and driving enterprise-wide data governance. I bring full-stack fluency across the data life-cycle, from analytics to engineering to architecture, paired with hands-on IT experience in SCADA, VPNs, and on-prem environments. Positioned for IT management or lead IC roles in data engineering, platforms, or infrastructure, I excel at bridging technical execution with strategic enablement. I specialize in building not only resilient systems but also the governance frameworks, documentation, and data standards that ensure long-term organizational value. Beyond my professional work, I mentor high school students in robotics (FRC), leading software education and managing a \$80K+ annual nonprofit budget. I bring the same operational discipline and mission-driven leadership to community work as I do to enterprise-scale data problems, making me equally prepared for technical leadership and advisory roles.
 } \\
-\vspace{6pt}
-\textit{Board & Advisory: Proven operational leadership in nonprofit STEM education with budgetary control, executive stakeholder engagement, and governance alignment. Experienced in building infrastructure, compliance systems, and educational pipelines, well-positioned for board and advisory contributions in tech-forward organizations.}
+
 
 
 
@@ -172,7 +171,7 @@
     {Cloudflare}{Dallas, TX (Remote)}
     {Data Engineer}{May 2024 – Present}
     \resumeItemListStart
-      \resumeItem{Mid-level Data Engineer working on the BI team to support internal-facing data applications and large-scale ingestion pipelines.}
+      \resumeItem{Senior Data Engineer working on the BI team to support internal-facing data applications and large-scale ingestion pipelines.}
       \resumeItem{Created, owned, and currently maintain the platform operations for the Interim Variable Billing project—a direct revenue-generating initiative recouping \$40M in quarterly revenue.}
       \resumeItem{Implemented a Retrieval-Augmented Generation (RAG) AI model for Cloudflare’s internal chatbot on the Lighthouse platform. Built a data pipeline to load hundreds of internal wikis into Cloudflare Vectorize and integrated with Cloudflare Workers to enable seamless AI-assisted internal search.}
       \resumeItem{Designed and implemented native data quality checks within our Go-based ingestion framework using DuckDB, enabling efficient in-line validation during ingestion.}
@@ -180,7 +179,7 @@
       \resumeItem{Proposed a cost-saving redesign to eliminate reliance on Spark/Dataproc by migrating transformations to Rust-based DataFusion and/or DBT, significantly reducing compute cost.}
       \resumeItem{Developed and maintained multiple data pipelines using Cloudflare’s internal Go-based ingestion framework.}
       \resumeItem{Recognized as the U.S. timezone lead for the Lighthouse platform due to consistent ownership and leadership in debugging and delivery.}
-      \resumeItem{Developed reusable ingestion pipelines to support syncing across a variety of structured and semi-structured data sources.}
+      \resumeItem{Develop and maintain custom internal salesforce replacement Web app serving 1,000+ DAU unlocking hundreds of millions in ACV.}
     \resumeItemListEnd
     \resumeTech{Technologies}{Typescript, Scala, GCP, Bigquery, Clickhouse, Docker, Kubernetes, Cloudflare Products: (Workers AI, Workers, Vectorize, R2) }
 
@@ -355,8 +354,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Leadership & Community Engagement    %
 %%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Leadership \& Community Engagement}
+\section{Leadership, Board, Advisory \& Community Engagement}
 
+    \textit{Proven operational leadership in nonprofit STEM education with budgetary control, executive stakeholder engagement, and governance alignment. Experienced in building infrastructure, compliance systems, and educational pipelines, well-positioned for board and advisory contributions in tech-forward organizations.}
     \resumeSubheading
       {FIRST Robotics Competition Team 3005}{Dallas, TX}
       {Co-executive Director \& Lead Software Mentor}{2020 — Present}
