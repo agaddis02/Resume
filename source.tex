@@ -133,7 +133,7 @@
 
 \begin{resume_header}
     \name{\text{\href{https://www.linkedin.com/in/adam-t-gaddis-/}{\color{urlcolor}{\faicon{linkedin}} \color{textcolor} Adam T.Gaddis }}}
-    \program{ IT \& Data Infrastructure Leader | Governance, Enablement, Impact}
+    \program{ Senior Engineer \& Tech Lead | Distributed Data Platforms | Engineering \& IT Leadership}
     \contact
     {
         \text{\href{mailto:ag.lsec@icloud.com}{\color{urlcolor}{\faicon{envelope}} \color{textcolor} ag.lsec@icloud.com}}
@@ -148,7 +148,7 @@
 
 \section{Executive Summary}
 \text{
-  Data-Focused IT Leader with 7+ years of experience designing scalable data platforms, building cloud-native infrastructure, and driving enterprise-wide data governance. I bring full-stack fluency across the data life-cycle, from analytics to engineering to architecture, paired with hands-on IT experience in SCADA, VPNs, and on-prem environments. Positioned for IT management or lead IC roles in data engineering, platforms, or infrastructure, I excel at bridging technical execution with strategic enablement. I specialize in building not only resilient systems but also the governance frameworks, documentation, and data standards that ensure long-term organizational value. Beyond my professional work, I mentor high school students in robotics (FRC), leading software education and managing a \$80K+ annual nonprofit budget. I bring the same operational discipline and mission-driven leadership to community work as I do to enterprise-scale data problems, making me equally prepared for technical leadership and advisory roles.
+  Senior engineer and tech lead with 7+ years building distributed data systems, high-throughput ingestion pipelines, and customer-facing platforms across edge computing, energy, and finance. Fluent shipping in Go, Rust, Python, and C\#, with production work in TypeScript and C++, ranging from petabyte-scale ingestion frameworks to 20 ms real-time control loops on Linux-based robotics controllers. Background bridges modern data platform engineering (Apache Iceberg, distributed query engines, streaming) with real-world IT operations and real-time IoT / SCADA ingestion, making me equally effective at systems engineering and the infrastructure work that keeps those systems running. Active open-source contributor to Apache Iceberg (Go) and WPILib. Tech lead, mentor, and nonprofit Co-Executive Director.
 } \\
 
 
@@ -169,19 +169,23 @@
 \resumeSubHeadingListStart
   \resumeSubheading
     {Cloudflare}{Dallas, TX (Remote)}
-    {Data Engineer}{May 2024 – Present}
+    {Senior Data Engineer}{Apr. 2025 – Present}
+    \resumeSubSubheading{Data Engineer}{May 2024 – Apr. 2025}
     \resumeItemListStart
-      \resumeItem{Senior Data Engineer working on the BI team to support internal-facing data applications and large-scale ingestion pipelines.}
-      \resumeItem{Created, owned, and currently maintain the platform operations for the Interim Variable Billing project—a direct revenue-generating initiative recouping \$40M in quarterly revenue.}
-      \resumeItem{Implemented a Retrieval-Augmented Generation (RAG) AI model for Cloudflare’s internal chatbot on the Lighthouse platform. Built a data pipeline to load hundreds of internal wikis into Cloudflare Vectorize and integrated with Cloudflare Workers to enable seamless AI-assisted internal search.}
-      \resumeItem{Designed and implemented native data quality checks within our Go-based ingestion framework using DuckDB, enabling efficient in-line validation during ingestion.}
-      \resumeItem{Delivered multiple internal presentations across both the Lighthouse sub-team and the 80+ member BI organization, covering topics such as RAG implementation, ClickHouse vs. Postgres, and ingestion architecture.}
-      \resumeItem{Proposed a cost-saving redesign to eliminate reliance on Spark/Dataproc by migrating transformations to Rust-based DataFusion and/or DBT, significantly reducing compute cost.}
-      \resumeItem{Developed and maintained multiple data pipelines using Cloudflare’s internal Go-based ingestion framework.}
-      \resumeItem{Recognized as the U.S. timezone lead for the Lighthouse platform due to consistent ownership and leadership in debugging and delivery.}
-      \resumeItem{Develop and maintain custom internal salesforce replacement Web app serving 1,000+ DAU unlocking hundreds of millions in ACV.}
+      \resumeItem{Core maintainer of Jetflow, Cloudflare's in-house Go-based data ingestion framework handling petabyte-scale pipelines, built around distributed systems primitives and highly concurrent workloads (see the public Cloudflare blog: \href{https://blog.cloudflare.com/building-jetflow-a-framework-for-flexible-performant-data-pipelines-at-cloudflare/}{\color{urlcolor}Building Jetflow}).}
+      \resumeItem{Sole owner of Apache Iceberg support within Jetflow, enabling first-class Iceberg reads and writes across ingestion pipelines; active contributor to the open-source \href{https://github.com/apache/iceberg-go}{\color{urlcolor}apache/iceberg-go} project.}
+      \resumeItem{Technical lead for the Data Infrastructure \& Analytics team's migration off GCP (BigQuery and object storage) to Cloudflare R2, R2 Data Catalog, and a self-hosted query engine, projected to save \$1.5M+ annually.}
+      \resumeItem{Leading the self-hosted query engine initiative (originating as a hackathon concept): integrating DuckDB as a Jetflow consumer reading from R2 Data Catalog and writing back to R2DC, and standing up StarRocks on Kubernetes as the distributed SQL layer.}
+      \resumeItem{Selected to embed with Cloudflare's Billing Engineering (fintech) team for two quarters on the strength of my Interim Variable Billing work (\$40M quarterly recoup); architected and built their streaming metering and sinking platform in Go using Kafka and Iceberg, sustaining 100{,}000+ events per second. The system is becoming Cloudflare's unified billing pipeline, ultimately accounting for all revenue flowing through the company.}
+      \resumeItem{Designed and built a customer-facing cost explorer (React front-end served by Cloudflare Workers and Containers) for one of Cloudflare's largest customers, marking the first successful POC of an application querying R2 Data Catalog directly to serve an end-user consumer.}
+      \resumeItem{Owner of the Interim Variable Billing platform, a direct revenue-generating initiative recouping \$40M in quarterly revenue.}
+      \resumeItem{Design and maintain Lighthouse, Cloudflare's internal sales and customer management platform, serving 1{,}000+ daily active users and unlocking hundreds of millions in annual contract value.}
+      \resumeItem{Implemented Cloudflare's internal Retrieval-Augmented Generation (RAG) chatbot on the Lighthouse platform: built the ingestion pipeline loading hundreds of internal wikis into Cloudflare Vectorize and integrated it with Cloudflare Workers for AI-assisted internal search.}
+      \resumeItem{Designed and implemented native data quality checks within the Jetflow framework using DuckDB, enabling efficient in-line validation during ingestion.}
+      \resumeItem{Led the implementation of a customer metadata boundary across the BI data platform, enforcing consistent separation of customer-scoped metadata across ingestion, storage, and downstream consumers.}
+      \resumeItem{Tech lead across multiple initiatives within Data Infrastructure \& Analytics; deliver regular internal presentations (RAG implementation, open table formats, ClickHouse vs. Postgres, ingestion architecture, the migration from our legacy Spark-based ingestion framework, and the customer metadata boundary rollout) to audiences ranging from our sub-team to the 80+ member BI organization.}
     \resumeItemListEnd
-    \resumeTech{Technologies}{Typescript, Scala, GCP, Bigquery, Clickhouse, Docker, Kubernetes, Cloudflare Products: (Workers AI, Workers, Vectorize, R2) }
+    \resumeTech{Technologies}{Go, Rust, TypeScript, React, Python, Apache Iceberg, DuckDB, DataFusion, StarRocks, Kafka, Kubernetes, Docker, Cloudflare Workers, R2, R2 Data Catalog, Vectorize, Workers AI, Containers, BigQuery, ClickHouse}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %    Adam Gaddis Consulting    %
@@ -190,31 +194,29 @@
       {Adam Gaddis IT \& Data Consulting}{Dallas, TX}
       {Founder}{April 2022 – Present}
       \resumeItemListStart
-        \resumeItem{Provide IT and data consulting services to a variety of clients, with a focus on the oil and gas industry.}
+        \resumeItem{Provide IT, data, and software consulting services to clients across the energy sector, spanning oil and gas production and real-time electrical metering / IoT.}
         \resumeItem{Helped multiple clients design and implement modern data infrastructure, automating ingestion and storage from key energy data providers such as Enverus, IHS, and ComboCurve.}
+        \resumeItem{Designed and built a real-time electrical meter data platform: MQTT-based managed pub/sub firmware configuration delivered to field microcontrollers, streaming ingestion of meter and telemetry data into Apache Iceberg and Postgres, and user-facing Blazor applications on top of the platform.}
       \resumeItemListEnd
-    \resumeTech{Technologies}{Snowflake, Azure, GCP, Combocurve, PowerBI, Spotfire, Databricks, DBT, SSO, IOT, SCADA, SQL Server, Tailscale, Spark}
+    \resumeTech{Technologies}{C\# / Blazor, Apache Iceberg, Postgres, MQTT, Managed Pub/Sub, IoT / Embedded \& Microcontrollers, Snowflake, Azure, GCP, Combocurve, PowerBI, Spotfire, Databricks, DBT, SSO, SCADA, SQL Server, Tailscale, Spark}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %    Arch Energy Partners    %
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \resumeSubheading
   {Arch Energy Partners}{Dallas, TX (Hybrid)}
-  {Head of Data \& IT}{Mar. 2023 – Present}
+  {Head of Data \& IT}{Mar. 2023 – May 2024}
   \resumeItemListStart
-    \resumeItem{As the founding Data / IT Hire at a dynamic oil and gas company, led the design and management of all software and data infrastructure, working autonomously to deliver scalable, efficient solutions.}
-    \resumeItem{Managed day-to-day IT operations: provisioned virtual machines, maintained the office VPN system, and enforced cloud spend budgets.}
-    \resumeItem{Developed robust data ingestion pipelines using Go, C\#, and Python to integrate data from multiple sources. Leveraged PySpark on Databricks to process over 500 million daily well production records.}
-    \resumeItem{Built custom tools to track and monitor active oil wells with real-time analytics. Developed a Python-based ELT pipeline to streamline accounting data integration into the data warehouse.}
-    \resumeItem{Established and maintained a multi-cloud environment across GCP, AWS, and Azure, optimizing for cost and performance. Pioneered centralized warehousing using BigQuery.}
-    \resumeItem{Eliminated reliance on third-party IT vendors and consultants by internalizing all infrastructure operations.}
-    \resumeItem{Implemented a robust PySpark-based replication system for ingesting well data from Enverus \& other RDS based providers.}
-    \resumeItem{Designed the "Wells in Pay" Spotfire dashboard for Land and Accounting teams, providing immediate insight into well status (e.g., pay, active, pending) and recovering missed payments.}
-    \resumeItem{Centralized all transformation logic using Google Dataform to enforce consistency and transparency.}
-    \resumeItem{Engineered multiple Google Cloud Functions to automate and enhance data transformation and storage processes.}
-    \resumeItem{Converted to consultant in May 2024.}
+    \resumeItem{As the founding Data / IT hire at a fast-moving oil and gas company, led the design and management of all software and data infrastructure, working autonomously to deliver scalable, resilient solutions.}
+    \resumeItem{Built and operated the data ingestion platform in Go and Rust, orchestrated on GKE (Kubernetes) using Prefect for pod-based execution, integrating data from multiple providers (Enverus, RDS-based feeds, accounting, etc.) and processing hundreds of millions of daily well production records.}
+    \resumeItem{Used Apache DataFusion for analytical compute across ingestion and transformation workloads, replacing a heavier JVM-based stack.}
+    \resumeItem{Established and maintained a multi-cloud footprint across GCP, AWS, and Azure, optimizing for cost and performance; pioneered centralized warehousing on BigQuery.}
+    \resumeItem{Built custom tooling to track and monitor active oil wells with real-time analytics, and designed the ``Wells in Pay'' Spotfire dashboard for Land and Accounting teams, providing immediate insight into well status and recovering missed payments.}
+    \resumeItem{Centralized all transformation logic using Google Dataform to enforce consistency and transparency, and engineered multiple Google Cloud Functions to automate data transformation and storage workflows.}
+    \resumeItem{Managed day-to-day IT operations (virtual machines, office VPN, cloud spend governance), eliminating reliance on third-party IT vendors and consultants by internalizing all infrastructure operations.}
+    \resumeItem{Converted to an ongoing consulting engagement in May 2024 (see Adam Gaddis IT \& Data Consulting above).}
 \resumeItemListEnd
-\resumeTech{Technologies}{Go, GCP, Bigquery, S3, GCS, Cloud Functions, Databricks, Apache Spark, SSO \& Oauth, Spotfire, Geopandas, DBT/Dataform}
+\resumeTech{Technologies}{Go, Rust, DataFusion, GKE / Kubernetes, Prefect, GCP, BigQuery, S3, GCS, Cloud Functions, SSO \& OAuth, Spotfire, Geopandas, DBT / Dataform}
 
 
 
@@ -223,15 +225,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \resumeSubheading
       {Bank of America}{Dallas, TX (Hybrid)}
-      {AVP Data Engineer II}{Sep. 2022 — Mar. 2023}
+      {AVP Data Engineer II}{Sep. 2022 – Mar. 2023}
       \resumeItemListStart
-      \resumeItem{Led the establishment of SDLC practices for the team, transitioning code to a centralized Bitbucket repository and meticulously documenting all ongoing systems.}
-      \resumeItem{Overhauled real-time text-based data segments of the data warehouse, converting SQL Server scripts and SSIS packages into efficient PySpark code and Kafka streams, achieving processing of hundreds of millions of data points in near real-time.}
-      \resumeItem{Led modernization effort in transition to modern data tools, identified transition plan from SQL Server to Azure Synapse.}
-      \resumeItem{Successfully developed a Flask-based web application to revamp a report tracking system for a sister team, managing and updating over 1000 internal reports encompassing more than 500,000 data points.}
-      \resumeItem{Spearheaded the continuous integration and continuous deployment (CI/CD) processes using Bitbucket and Jenkins, ensuring seamless and efficient deployment of software updates.}
+      \resumeItem{Overhauled real-time text-based segments of the data warehouse into a streaming Kafka + PySpark pipeline, replacing legacy SQL Server scripts and SSIS packages and achieving near-real-time processing of hundreds of millions of data points.}
+      \resumeItem{Led the team's SDLC modernization: migrated code to a centralized Bitbucket repository, documented ongoing systems, and stood up a CI/CD workflow using Bitbucket and Jenkins for seamless deployments.}
+      \resumeItem{Drove the modernization strategy for moving off SQL Server, identifying and scoping the transition plan to Azure Synapse.}
+      \resumeItem{Developed a Flask-based web application to revamp a report tracking system for a sister team, managing and updating over 1{,}000 internal reports encompassing more than 500{,}000 data points.}
 \resumeItemListEnd
-\resumeTech{Technologies}{Azure, Hadoop, MapReduce, HDFS, Sqoop, Impala, Azure Synapse}
+\resumeTech{Technologies}{Azure, Kafka, PySpark, Hadoop, MapReduce, HDFS, Sqoop, Impala, Azure Synapse, Bitbucket, Jenkins}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -240,7 +241,7 @@
 
 \resumeSubheading
       {LOOP}{Dallas, TX (Remote)}
-      {Senior Data Engineer}{April 2022 — Sep. 2022}
+      {Senior Data Engineer}{April 2022 – Sep. 2022}
       \resumeItemListStart
         \resumeItem{Led key data engineering initiatives, focusing on building and managing robust data pipelines, remediating data governance issues, and centralizing data for company-wide analysis.}
         \resumeItem{Implemented and configured GCP-hosted Airflow (Cloud Composer), centralizing all pipeline scheduling into a unified orchestration system to improve data lineage and dependency management.}
@@ -262,7 +263,7 @@
         \resumeCondensedItem
           {Southwest Airlines}
           {Data Platform Engineer Intern}
-          {Jan. 2022 — April 2022}
+          {Jan. 2022 – April 2022}
           {Dallas, TX}
           {Automated X12 EDI invoice ingestion using a custom Python parser, Airflow, and Postgres; supported ERP transformation planning and deployed pipelines via Docker and Jenkins.}
         %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -271,7 +272,7 @@
         \resumeCondensedItem
           {Goldman Sachs}
           {Data Platform Engineer Intern}
-          {Jun. 2021 — Aug. 2021}
+          {Jun. 2021 – Aug. 2021}
           {Dallas, TX}
           {Built internal Python tools and libraries to streamline audit data workflows, improved test coverage from 70\% to 91\%, and reconciled on-prem vs. cloud schema mismatches for critical data systems.}
         %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -280,7 +281,7 @@
         \resumeCondensedItem
           {University of North Texas at Dallas}
           {Lead Analytics Engineer}
-          {Aug. 2020 — Dec. 2021}
+          {Aug. 2020 – Dec. 2021}
           {Dallas, TX}
           {Led analytics and reporting efforts across Power BI, SAS, and Oracle; managed data requests, state reporting pipelines, and a team of five while ensuring full compliance with Texas education standards.}
         %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -289,9 +290,9 @@
         \resumeCondensedItem
           {Scout Energy Partners}
           {Data Platform Engineer}
-          {Jun. 2019 — Aug. 2020}
+          {Jun. 2019 – Aug. 2020}
           {Dallas, TX}
-          {Built and maintained SCADA data infrastructure, C\# web apps, predictive models, and Spotfire dashboards for oil production analytics while supporting hybrid IT operations and Azure SQL Server development.}
+          {Built and maintained real-time industrial data ingestion infrastructure (SCADA / IoT) for oil production analytics, alongside C\# web apps, predictive models, Spotfire dashboards, Azure SQL Server development, and hybrid IT operations.}
      \resumeItemListEnd
      \resumeTech{Technologies}{Python, PyPI, Docker, Kubernetes, Azure, SQL Server, Oracle, Postgres, PowerBI, Tableau, Spotfire, Geopandas, Fiona, Shapely, Confluence, Jenkins}
 
@@ -305,17 +306,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Skills}
 
-% Side-by-side section for compact categories
-\begin{tabularx}{\textwidth}{X X}
-    \resumeTech{Orchestration}{Airflow, Prefect, Azure Data Factory} &
-    \resumeTech{Frameworks}{FastAPI, Spark, DuckDB, DataFusion, Blazor, Iceberg, DBT} \\
-\end{tabularx}
-
-% Full-width rows for larger categories
-\resumeTech{Analytics \& ML}{PowerBI, Spotfire, Workers AI, Vectorize, Keras, OpenCV} \\
-\resumeTech{Governance \& Compliance}{Monte Carlo, Great Expectations, dbdiagram.io} \\
+\resumeTech{Languages}{Go, Rust, Python, C\#, TypeScript, C++, SQL, Scala, Dart} \\
+\resumeTech{Distributed Data \& Storage}{Apache Iceberg, Kafka, MQTT, R2, R2 Data Catalog, BigQuery, ClickHouse, Snowflake, Databricks, Azure Synapse, Postgres, SQL Server, MongoDB, S3, GCS} \\
+\resumeTech{Query \& Compute Engines}{DataFusion, DuckDB, StarRocks, Spark, DBT, Dataform} \\
+\resumeTech{Orchestration}{Airflow, Prefect, Azure Data Factory} \\
+\resumeTech{Platforms}{Cloudflare (Workers, R2, Vectorize, Workers AI, Containers), GCP, AWS, Azure} \\
+\resumeTech{Systems \& Infra}{Linux, Kubernetes (GKE), Docker, CI/CD (Jenkins, GitLab, Bitbucket), FastAPI, Flask} \\
 \resumeTech{IT \& Infrastructure}{SCADA, Cisco AnyConnect, Tailscale, Okta (SSO), Windows/Linux Server, On-Prem Systems} \\
-\resumeTech{Data Storage}{BigQuery, Snowflake, Databricks, Azure Synapse, SQL Server, Postgres, S3, MongoDB} \\
+\resumeTech{Frontend \& App}{React, TypeScript, Flutter / Dart, Blazor} \\
+\resumeTech{Analytics \& ML}{PowerBI, Spotfire, Vertex AI, Workers AI, Vectorize, Keras, OpenCV} \\
+\resumeTech{Governance \& Compliance}{Monte Carlo, Great Expectations, dbdiagram.io} \\
 
 
 
@@ -331,25 +331,26 @@
 
     \resumeSubheading
       {University of North Texas at Dallas}{Dallas, TX}
-      {M.B.A Strategic Management Concentration | \textit{GPA: 4.0/4.0} } {Aug. 2024 — July. 2025}
+      {M.B.A Strategic Management Concentration | \textit{GPA: 4.0/4.0} } {Aug. 2024 – July. 2025}
       
     %%%%%%%%%%%%%%%%%%%%%%%%%%
     %     UNTD Bachelors    %
     %%%%%%%%%%%%%%%%%%%%%%%%%%
     \resumeSubheading
       {University of North Texas at Dallas}{Dallas, TX}
-      {B.B.A in Analytics | \textit{GPA: 3.7/4.0} } {Aug. 2020 — Dec. 2022}
+      {B.B.A in Analytics | \textit{GPA: 3.7/4.0} } {Aug. 2020 – Dec. 2022}
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%
     %     Richland  Associates    %
     %%%%%%%%%%%%%%%%%%%%%%%%%%
       \resumeSubheading
       {Dallas College}{Dallas, TX}
-      {A.A.S in Software Development | \textit{GPA: 3.6/4.0.}}{Aug. 2016 — May. 2020}
+      {A.A.S in Software Development | \textit{GPA: 3.6/4.0.}}{Aug. 2016 – May. 2020}
 
   \resumeSubHeadingListEnd
 % ---
 
+\newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Leadership & Community Engagement    %
@@ -359,13 +360,16 @@
     \textit{Proven operational leadership in nonprofit STEM education with budgetary control, executive stakeholder engagement, and governance alignment. Experienced in building infrastructure, compliance systems, and educational pipelines, well-positioned for board and advisory contributions in tech-forward organizations.}
     \resumeSubheading
       {FIRST Robotics Competition Team 3005}{Dallas, TX}
-      {Co-executive Director \& Lead Software Mentor}{2020 — Present}
+      {Co-executive Director \& Lead Software Mentor}{2020 – Present}
       \resumeItemListStart
-        \resumeItem{Lead mentor and administrator for FRC Team 3005 and FTC teams at Emmett J. Conrad High School in Dallas ISD, serving students in the Vickery Meadows area—a designated refugee community with highly diverse and underserved demographics.}
-        \resumeItem{Contributed 1000+ hours annually mentoring students and managing team operations, including software education, IT infrastructure, and team logistics.}
-        \resumeItem{Oversaw cloud infrastructure and IT systems, leveraging nonprofit credits and mentoring students in the development of scouting, data collection, and analytics apps used during competition.}
+        \resumeItem{Lead mentor and administrator for FRC Team 3005 and FTC teams at Emmett J. Conrad High School in Dallas ISD, serving students in the Vickery Meadows area, a designated refugee community with highly diverse and underserved demographics.}
+        \resumeItem{Mentor students in systems-level C++ programming on Linux-based roboRIO controllers, implementing 20 ms watchdog control loops, real-time sensor fusion, and vision-based field localization for 130 lb competition robots operating at 5+ m/s. Performance-critical C++ code is exposed to student developers via pybind11 Python bindings.}
+        \resumeItem{Active contributor to \href{https://github.com/wpilibsuite/allwpilib}{\color{urlcolor}WPILib} (\texttt{wpilibsuite/allwpilib}), the open-source C++/Java systems framework that powers all FRC robots.}
+        \resumeItem{Mentor students building the team's competition scouting and analytics application in Flutter / Dart, used live during match play to inform strategy and alliance selection.}
+        \resumeItem{Contributed 1{,}000+ hours annually mentoring students and managing team operations, including software education, IT infrastructure, and team logistics.}
+        \resumeItem{Oversee cloud infrastructure and IT systems, leveraging nonprofit credits and mentoring students in the development of scouting, data collection, and analytics apps used during competition.}
         \resumeItem{Assumed full leadership of the program in 2025 alongside my wife, taking responsibility for administration, budgeting, grant writing, and maintaining relationships with school leadership and key sponsors such as the Vickery Meadows Youth Foundation.}
-        \resumeItem{Manage an annual nonprofit budget of \$60,000–\$80,000 to fund robotics competitions, equipment, travel, and outreach, ensuring long-term sustainability and community impact.}
+        \resumeItem{Manage an annual nonprofit budget of \$60{,}000–\$80{,}000 to fund robotics competitions, equipment, travel, and outreach, ensuring long-term sustainability and community impact.}
         \resumeItem{Lead all software and IT initiatives, including robot programming, while fostering student-driven development in a hands-on, collaborative learning environment.}
         \resumeItem{Mentor approximately 30 students annually and support competitive excellence, including back-to-back Texas UIL State Championship titles.}
     \resumeItemListEnd
