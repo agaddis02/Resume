@@ -101,18 +101,18 @@
 
 % COLOR THEMES SELECTION
 % For Light theme un-comment this and comment the Dark theme section below
-% \colorlet{textcolor}{black}
-% \colorlet{urlcolor}{blue}
-% \newcommand{\otherThemeRef}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Dark.pdf}{\color{textcolor}{Dark} \color{urlcolor}{\faicon{lightbulb-o}}}}}
-% \newcommand{\latestVersion}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Dark.pdf}{\color{urlcolor}{\faicon{refresh}} \color{textcolor} {Latest} }}}
+\colorlet{textcolor}{black}
+\colorlet{urlcolor}{blue}
+\newcommand{\otherThemeRef}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Dark.pdf}{\color{textcolor}{Dark} \color{urlcolor}{\faicon{lightbulb-o}}}}}
 
 % For Dark theme un-comment this and comment the Light theme section above
-% For Dark theme un-comment this and comment the Light theme section above
-\colorlet{textcolor}{white!80!gray}
-\colorlet{backgroundcolor}{black!30!gray}
-\colorlet{urlcolor}{blue!25!white}
-\AtBeginDocument{\color{textcolor}}
-\newcommand{\otherThemeRef}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Light.pdf}{\color{urlcolor}{\faicon{lightbulb-o}} \color{textcolor}{Light} }}}
+% \colorlet{textcolor}{white!80!gray}
+% \colorlet{backgroundcolor}{black!30!gray}
+% \colorlet{urlcolor}{blue!25!white}
+% \AtBeginDocument{\color{textcolor}}
+% \newcommand{\otherThemeRef}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Light.pdf}{\color{urlcolor}{\faicon{lightbulb-o}} \color{textcolor}{Light} }}}
+
+
 \newcommand{\latestVersion}{\text{\href{https://github.com/agaddis02/Resume/raw/master/Adam_Gaddis_Resume_Dark.pdf}{\color{urlcolor}{\faicon{refresh}} \color{textcolor} {Latest} }}}
 
 % ---
@@ -121,7 +121,7 @@
 \begin{document}
 
 % For Dark theme also un-comment this line:
-\pagecolor{backgroundcolor}
+% \pagecolor{backgroundcolor}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -169,9 +169,11 @@
 \resumeSubHeadingListStart
   \resumeSubheading
     {Cloudflare}{Dallas, TX (Remote)}
-    {Senior Data Engineer}{Apr. 2025 – Present}
+    {Senior Systems Engineer}{June 2026 – Present}
+    \resumeSubSubheading{Senior Data Engineer}{Apr. 2025 – June 2026}
     \resumeSubSubheading{Data Engineer}{May 2024 – Apr. 2025}
     \resumeItemListStart
+      \resumeItem{Currently working on the \href{https://blog.cloudflare.com/cloudflare-data-platform/}{\color{urlcolor}public facing data product offerings} at Cloudflare, specifically working on the R2 Data Catalog team, bringing an easy managed Apache Iceberg Catalog to customers.}
       \resumeItem{Core maintainer of Jetflow, Cloudflare's in-house Go-based data ingestion framework handling petabyte-scale pipelines, built around distributed systems primitives and highly concurrent workloads (see the public Cloudflare blog: \href{https://blog.cloudflare.com/building-jetflow-a-framework-for-flexible-performant-data-pipelines-at-cloudflare/}{\color{urlcolor}Building Jetflow}).}
       \resumeItem{Sole owner of Apache Iceberg support within Jetflow, enabling first-class Iceberg reads and writes across ingestion pipelines; active contributor to the open-source \href{https://github.com/apache/iceberg-go}{\color{urlcolor}apache/iceberg-go} project.}
       \resumeItem{Technical lead for the Data Infrastructure \& Analytics team's migration off GCP (BigQuery and object storage) to Cloudflare R2, R2 Data Catalog, and a self-hosted query engine, projected to save \$1.5M+ annually.}
@@ -332,7 +334,7 @@
     \resumeSubheading
       {University of North Texas at Dallas}{Dallas, TX}
       {M.B.A Strategic Management Concentration | \textit{GPA: 4.0/4.0} } {Aug. 2024 – July. 2025}
-      
+
     %%%%%%%%%%%%%%%%%%%%%%%%%%
     %     UNTD Bachelors    %
     %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -377,4 +379,3 @@
 
 
 \end{document}
-
